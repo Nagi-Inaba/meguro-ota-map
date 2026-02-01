@@ -1,0 +1,1391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "めぐろ区民キャンパス公園",
+        "address": "目黒区八雲1-1-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674547,
+          35.618172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "衾町公園",
+        "address": "目黒区八雲5-7-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.670772,
+          35.619956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碑文谷公園",
+        "address": "目黒区碑文谷6-9-11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68248,
+          35.626263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柿の木坂児童遊園",
+        "address": "目黒区柿の木坂2-29-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679889,
+          35.621369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中根公園付近",
+        "address": "目黒区中根2-10-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675876,
+          35.614275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "自由が丘公園付近",
+        "address": "目黒区自由が丘2-22-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671678,
+          35.612889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宮前公園付近",
+        "address": "目黒区八雲3-25-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.666366,
+          35.616342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "駒沢陸橋側道",
+        "address": "目黒区八雲5-18-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667326,
+          35.62295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "自由が丘学園付近",
+        "address": "目黒区自由が丘1-3-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671449,
+          35.612734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八雲3丁目交差点脇",
+        "address": "目黒区八雲3-13-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674369,
+          35.620114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八雲小学校角",
+        "address": "目黒区八雲2-14-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674358,
+          35.620139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "緑が丘1丁目児童遊園",
+        "address": "目黒区緑が丘1-15-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680383,
+          35.600861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "十一中北側",
+        "address": "目黒区中根1-22-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677939,
+          35.612936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大岡山公園周辺",
+        "address": "目黒区大岡山1-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.684033,
+          35.613481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中根2丁目住宅街十字路",
+        "address": "目黒区中根2-5-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677195,
+          35.616014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "自由が丘3丁目エリア",
+        "address": "目黒区自由が丘3-15-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.664407,
+          35.610978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "緑が丘文化会館横",
+        "address": "目黒区緑が丘2-14-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680383,
+          35.600861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "呑川緑道交差点",
+        "address": "目黒区八雲4-5-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671217,
+          35.623982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "深沢不動付近",
+        "address": "目黒区柿の木坂3-11-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.673495,
+          35.627894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東が丘公園横",
+        "address": "目黒区東が丘1-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.671758,
+          35.628886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柿の木坂東児童遊園",
+        "address": "目黒区柿の木坂1-22-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679575,
+          35.621883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "平町1丁目住宅街",
+        "address": "目黒区平町1-18-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680406,
+          35.620078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柿の木坂3丁目西角",
+        "address": "目黒区柿の木坂3-6-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679681,
+          35.621769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "駒沢公園入口",
+        "address": "目黒区東が丘2-16-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672056,
+          35.629583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "都立大駅北マンション群",
+        "address": "目黒区中根1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6755,
+          35.618014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "平町児童遊園",
+        "address": "目黒区平町2-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680806,
+          35.6194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柿の木坂みどり公園",
+        "address": "目黒区柿の木坂3-3-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679681,
+          35.621769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碑文谷2丁目区道交点",
+        "address": "目黒区碑文谷2-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691311,
+          35.621569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "サレジオ教会裏手",
+        "address": "目黒区碑文谷1-26-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691525,
+          35.621722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜修館中等教育学校横",
+        "address": "目黒区八雲1-1-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.67471,
+          35.618378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国立病院機構付近",
+        "address": "目黒区東が丘2-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672056,
+          35.629583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "柿の木坂1丁目交差点裏",
+        "address": "目黒区柿の木坂1-30-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679575,
+          35.621883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "公園西側坂道",
+        "address": "目黒区中根2-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677086,
+          35.618756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八雲体育館周辺",
+        "address": "目黒区八雲1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674244,
+          35.620378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "清水池公園周辺",
+        "address": "目黒区目黒本町2-12-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695769,
+          35.628403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "本町5丁目エリア",
+        "address": "目黒区目黒本町5-30-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69625,
+          35.628019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "洗足公園周辺",
+        "address": "目黒区洗足2-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695303,
+          35.616078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "厳島神社付近三差路",
+        "address": "目黒区碑文谷3-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692731,
+          35.621622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "原町1丁目マンション街",
+        "address": "目黒区原町1-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697053,
+          35.618042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "目黒星美学園周辺",
+        "address": "目黒区碑文谷1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691525,
+          35.621722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南1丁目区境",
+        "address": "目黒区南1-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689969,
+          35.617764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "洗足駅北マンション街",
+        "address": "目黒区洗足2-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695303,
+          35.616078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "円融寺裏手",
+        "address": "目黒区碑文谷1-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691525,
+          35.621722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4丁目マンションエリア",
+        "address": "目黒区碑文谷4-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692783,
+          35.621569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南2丁目児童遊園",
+        "address": "目黒区南2-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690014,
+          35.617614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西小山駅付近（区境）",
+        "address": "目黒区目黒本町5-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.69625,
+          35.628019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碑文谷並木道",
+        "address": "目黒区碑文谷6-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692447,
+          35.621478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "すずめのお宿公園周辺",
+        "address": "目黒区碑文谷3-11-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692731,
+          35.621622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宝来公園",
+        "address": "大田区田園調布3-31-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675033,
+          35.592789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "田園調布せせらぎ公園",
+        "address": "大田区田園調布1-53-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.667589,
+          35.596671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "雪ヶ谷児童遊園",
+        "address": "大田区東雪谷2-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690617,
+          35.599992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東雪谷二丁目公園",
+        "address": "大田区東雪谷2-3-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.686655,
+          35.599018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久が原公園",
+        "address": "大田区久が原3-27-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697637,
+          35.580867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南久が原児童公園",
+        "address": "大田区南久が原1-17-6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.697637,
+          35.580867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "田園調布小学校周辺",
+        "address": "大田区田園調布2-40-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674486,
+          35.593089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "多摩川台公園入口",
+        "address": "大田区田園調布4-2-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675097,
+          35.592694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "本町児童公園付近",
+        "address": "大田区田園調布本町15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.678519,
+          35.587217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "嶺町小学校周辺",
+        "address": "大田区田園調布本町7-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.677436,
+          35.588528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "坂上見通し地点",
+        "address": "大田区東雪谷3-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690683,
+          35.599803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "住宅街中央",
+        "address": "大田区雪谷大塚町10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679897,
+          35.594078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2丁目低層エリア",
+        "address": "大田区南雪谷2-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68365,
+          35.5955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1丁目住宅街",
+        "address": "大田区石川町1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682092,
+          35.604156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "多摩川沿い高台",
+        "address": "大田区田園調布5-50-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675625,
+          35.591733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "雪谷中学校周辺",
+        "address": "大田区南雪谷5-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.683736,
+          35.595403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東雪谷4丁目マンション群",
+        "address": "大田区東雪谷4-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.690964,
+          35.599994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "扇状道路合流点",
+        "address": "大田区田園調布2-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.674486,
+          35.593089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "笹丸東公園付近",
+        "address": "大田区田園調布本町25-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675417,
+          35.587347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "諏訪分公園周辺",
+        "address": "大田区田園調布4-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.675097,
+          35.592694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "石川台駅北高台",
+        "address": "大田区石川町2-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681967,
+          35.604153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久が原4丁目広道",
+        "address": "大田区久が原4-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693522,
+          35.586708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "千鳥1丁目マンション街",
+        "address": "大田区千鳥1-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691828,
+          35.574528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鵜の木1丁目公園角",
+        "address": "大田区鵜の木1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.682617,
+          35.578322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久が原特別出張所付近",
+        "address": "大田区久が原2-12-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693094,
+          35.586644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "児童公園周辺",
+        "address": "大田区東嶺町10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687561,
+          35.585861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南久が原2丁目交差点",
+        "address": "大田区南久が原2-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.688631,
+          35.579061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "千鳥町駅西住宅街",
+        "address": "大田区千鳥1-5-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691828,
+          35.574528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5丁目静かな区道",
+        "address": "大田区久が原5-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692542,
+          35.587553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3丁目マンション密集地",
+        "address": "大田区鵜の木3-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681644,
+          35.578411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松山公園周辺",
+        "address": "大田区久が原4-25-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693522,
+          35.586708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久が原出世観音付近",
+        "address": "大田区久が原2-5-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693094,
+          35.586644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "千鳥3丁目マンション街",
+        "address": "大田区千鳥3-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.692139,
+          35.574581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2丁目見通し区道",
+        "address": "大田区鵜の木2-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681772,
+          35.578356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久が原杜の公園周辺",
+        "address": "大田区久が原4-30-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.693522,
+          35.586708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西嶺町高台",
+        "address": "大田区西嶺町15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.679883,
+          35.583544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3丁目マンション密集",
+        "address": "大田区上池台3-20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698542,
+          35.603103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "長池公園周辺",
+        "address": "大田区上池台1-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.699072,
+          35.602994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1丁目住宅街",
+        "address": "大田区仲池上1-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698297,
+          35.589117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北嶺町児童公園前",
+        "address": "大田区北嶺町15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687606,
+          35.58805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "洗足池公園南入口",
+        "address": "大田区南雪谷1-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68275,
+          35.596158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5丁目坂頂上",
+        "address": "大田区上池台5-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698328,
+          35.603117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2丁目静かな区道",
+        "address": "大田区仲池上2-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.701064,
+          35.589753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北嶺町交差点裏",
+        "address": "大田区北嶺町20-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.687769,
+          35.587856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "商店街外れ",
+        "address": "大田区上池台2-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698728,
+          35.602997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小池公園周辺",
+        "address": "大田区上池台3-35-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698542,
+          35.603103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "夫婦坂付近",
+        "address": "大田区上池台4-10-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7001,
+          35.601872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "雪谷中学校東側",
+        "address": "大田区東雪谷5-15-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691131,
+          35.599953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桜並木通り沿い",
+        "address": "大田区仲池上1-25-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.698297,
+          35.589117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4丁目マンション群",
+        "address": "大田区上池台4-25-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7001,
+          35.601872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "洗足池図書館周辺",
+        "address": "大田区南雪谷2-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.68365,
+          35.5955
+        ]
+      }
+    }
+  ]
+}

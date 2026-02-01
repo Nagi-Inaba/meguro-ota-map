@@ -1,0 +1,28 @@
+{
+  "name": "meguro-chome-map",
+  "version": "1.0.0",
+  "description": "目黒区町丁地図（Mapbox）",
+  "type": "module",
+  "scripts": {
+    "build:gml": "node scripts/gml-meguro-chome-to-geojson.js",
+    "build:excel": "node scripts/excel-to-merged-json.js",
+    "build:excel:ota": "node scripts/excel-ota-to-json.js",
+    "build:shapefile": "node scripts/shapefile-to-geojson.js",
+    "build:shapefile:ota": "node scripts/shapefile-ota-to-geojson.js",
+    "build:speech-spots": "node scripts/csv-speech-spots-to-geojson.js",
+    "build": "npm run build:gml && npm run build:excel",
+    "start": "npx serve -l 3000"
+  },
+  "dependencies": {
+    "@turf/area": "^7.3.3",
+    "@turf/boolean-point-in-polygon": "^7.0.0",
+    "@turf/difference": "^7.3.3",
+    "@turf/helpers": "^7.0.0",
+    "@turf/intersect": "^7.0.0",
+    "@turf/union": "^7.3.3",
+    "fast-xml-parser": "^4.3.2",
+    "jsts": "^2.12.1",
+    "shpjs": "^6.2.0",
+    "xlsx": "^0.18.5"
+  }
+}

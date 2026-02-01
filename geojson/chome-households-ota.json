@@ -1,0 +1,1542 @@
+[
+  {
+    "name": "東京都大田区大森中一丁目",
+    "nameKey": "大森中一丁目",
+    "total": 1020,
+    "apartments_3_5": 625,
+    "apartments_6_10": 395
+  },
+  {
+    "name": "東京都大田区大森中二丁目",
+    "nameKey": "大森中二丁目",
+    "total": 1093,
+    "apartments_3_5": 683,
+    "apartments_6_10": 410
+  },
+  {
+    "name": "東京都大田区大森中三丁目",
+    "nameKey": "大森中三丁目",
+    "total": 1214,
+    "apartments_3_5": 1135,
+    "apartments_6_10": 79
+  },
+  {
+    "name": "東京都大田区大森東一丁目",
+    "nameKey": "大森東一丁目",
+    "total": 1232,
+    "apartments_3_5": 610,
+    "apartments_6_10": 622
+  },
+  {
+    "name": "東京都大田区大森東二丁目",
+    "nameKey": "大森東二丁目",
+    "total": 1093,
+    "apartments_3_5": 890,
+    "apartments_6_10": 203
+  },
+  {
+    "name": "東京都大田区大森東三丁目",
+    "nameKey": "大森東三丁目",
+    "total": 499,
+    "apartments_3_5": 499,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区大森東四丁目",
+    "nameKey": "大森東四丁目",
+    "total": 888,
+    "apartments_3_5": 682,
+    "apartments_6_10": 206
+  },
+  {
+    "name": "東京都大田区大森東五丁目",
+    "nameKey": "大森東五丁目",
+    "total": 831,
+    "apartments_3_5": 782,
+    "apartments_6_10": 49
+  },
+  {
+    "name": "東京都大田区大森南一丁目",
+    "nameKey": "大森南一丁目",
+    "total": 579,
+    "apartments_3_5": 398,
+    "apartments_6_10": 181
+  },
+  {
+    "name": "東京都大田区大森南二丁目",
+    "nameKey": "大森南二丁目",
+    "total": 1316,
+    "apartments_3_5": 654,
+    "apartments_6_10": 662
+  },
+  {
+    "name": "東京都大田区大森南三丁目",
+    "nameKey": "大森南三丁目",
+    "total": 835,
+    "apartments_3_5": 584,
+    "apartments_6_10": 251
+  },
+  {
+    "name": "東京都大田区大森南四丁目",
+    "nameKey": "大森南四丁目",
+    "total": 278,
+    "apartments_3_5": 172,
+    "apartments_6_10": 106
+  },
+  {
+    "name": "東京都大田区大森南五丁目",
+    "nameKey": "大森南五丁目",
+    "total": 417,
+    "apartments_3_5": 306,
+    "apartments_6_10": 111
+  },
+  {
+    "name": "東京都大田区大森本町一丁目",
+    "nameKey": "大森本町一丁目",
+    "total": 568,
+    "apartments_3_5": 120,
+    "apartments_6_10": 448
+  },
+  {
+    "name": "東京都大田区大森本町二丁目",
+    "nameKey": "大森本町二丁目",
+    "total": 1258,
+    "apartments_3_5": 725,
+    "apartments_6_10": 533
+  },
+  {
+    "name": "東京都大田区大森西一丁目",
+    "nameKey": "大森西一丁目",
+    "total": 1719,
+    "apartments_3_5": 1079,
+    "apartments_6_10": 640
+  },
+  {
+    "name": "東京都大田区大森西二丁目",
+    "nameKey": "大森西二丁目",
+    "total": 2181,
+    "apartments_3_5": 1663,
+    "apartments_6_10": 518
+  },
+  {
+    "name": "東京都大田区大森西三丁目",
+    "nameKey": "大森西三丁目",
+    "total": 2420,
+    "apartments_3_5": 1519,
+    "apartments_6_10": 901
+  },
+  {
+    "name": "東京都大田区大森西四丁目",
+    "nameKey": "大森西四丁目",
+    "total": 1711,
+    "apartments_3_5": 923,
+    "apartments_6_10": 788
+  },
+  {
+    "name": "東京都大田区大森西五丁目",
+    "nameKey": "大森西五丁目",
+    "total": 1660,
+    "apartments_3_5": 1099,
+    "apartments_6_10": 561
+  },
+  {
+    "name": "東京都大田区大森西六丁目",
+    "nameKey": "大森西六丁目",
+    "total": 959,
+    "apartments_3_5": 864,
+    "apartments_6_10": 95
+  },
+  {
+    "name": "東京都大田区大森西七丁目",
+    "nameKey": "大森西七丁目",
+    "total": 624,
+    "apartments_3_5": 396,
+    "apartments_6_10": 228
+  },
+  {
+    "name": "東京都大田区山王一丁目",
+    "nameKey": "山王一丁目",
+    "total": 1148,
+    "apartments_3_5": 827,
+    "apartments_6_10": 321
+  },
+  {
+    "name": "東京都大田区山王二丁目",
+    "nameKey": "山王二丁目",
+    "total": 1442,
+    "apartments_3_5": 723,
+    "apartments_6_10": 719
+  },
+  {
+    "name": "東京都大田区山王三丁目",
+    "nameKey": "山王三丁目",
+    "total": 1370,
+    "apartments_3_5": 884,
+    "apartments_6_10": 486
+  },
+  {
+    "name": "東京都大田区山王四丁目",
+    "nameKey": "山王四丁目",
+    "total": 671,
+    "apartments_3_5": 411,
+    "apartments_6_10": 260
+  },
+  {
+    "name": "東京都大田区大森北一丁目",
+    "nameKey": "大森北一丁目",
+    "total": 1512,
+    "apartments_3_5": 267,
+    "apartments_6_10": 1245
+  },
+  {
+    "name": "東京都大田区大森北二丁目",
+    "nameKey": "大森北二丁目",
+    "total": 851,
+    "apartments_3_5": 228,
+    "apartments_6_10": 623
+  },
+  {
+    "name": "東京都大田区大森北三丁目",
+    "nameKey": "大森北三丁目",
+    "total": 1975,
+    "apartments_3_5": 1230,
+    "apartments_6_10": 745
+  },
+  {
+    "name": "東京都大田区大森北四丁目",
+    "nameKey": "大森北四丁目",
+    "total": 1106,
+    "apartments_3_5": 489,
+    "apartments_6_10": 617
+  },
+  {
+    "name": "東京都大田区大森北五丁目",
+    "nameKey": "大森北五丁目",
+    "total": 1292,
+    "apartments_3_5": 709,
+    "apartments_6_10": 583
+  },
+  {
+    "name": "東京都大田区大森北六丁目",
+    "nameKey": "大森北六丁目",
+    "total": 2091,
+    "apartments_3_5": 1387,
+    "apartments_6_10": 704
+  },
+  {
+    "name": "東京都大田区平和の森公園",
+    "nameKey": "平和の森公園",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区平和島一丁目",
+    "nameKey": "平和島一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区平和島二丁目",
+    "nameKey": "平和島二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区平和島三丁目",
+    "nameKey": "平和島三丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区平和島四丁目",
+    "nameKey": "平和島四丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区平和島五丁目",
+    "nameKey": "平和島五丁目",
+    "total": 40,
+    "apartments_3_5": 32,
+    "apartments_6_10": 8
+  },
+  {
+    "name": "東京都大田区平和島六丁目",
+    "nameKey": "平和島六丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区昭和島一丁目",
+    "nameKey": "昭和島一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区昭和島二丁目",
+    "nameKey": "昭和島二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区北馬込一丁目",
+    "nameKey": "北馬込一丁目",
+    "total": 891,
+    "apartments_3_5": 737,
+    "apartments_6_10": 154
+  },
+  {
+    "name": "東京都大田区北馬込二丁目",
+    "nameKey": "北馬込二丁目",
+    "total": 1350,
+    "apartments_3_5": 1092,
+    "apartments_6_10": 258
+  },
+  {
+    "name": "東京都大田区東馬込一丁目",
+    "nameKey": "東馬込一丁目",
+    "total": 1285,
+    "apartments_3_5": 963,
+    "apartments_6_10": 322
+  },
+  {
+    "name": "東京都大田区東馬込二丁目",
+    "nameKey": "東馬込二丁目",
+    "total": 318,
+    "apartments_3_5": 181,
+    "apartments_6_10": 137
+  },
+  {
+    "name": "東京都大田区中馬込一丁目",
+    "nameKey": "中馬込一丁目",
+    "total": 1530,
+    "apartments_3_5": 1097,
+    "apartments_6_10": 433
+  },
+  {
+    "name": "東京都大田区中馬込二丁目",
+    "nameKey": "中馬込二丁目",
+    "total": 1129,
+    "apartments_3_5": 803,
+    "apartments_6_10": 326
+  },
+  {
+    "name": "東京都大田区中馬込三丁目",
+    "nameKey": "中馬込三丁目",
+    "total": 2016,
+    "apartments_3_5": 1330,
+    "apartments_6_10": 686
+  },
+  {
+    "name": "東京都大田区西馬込一丁目",
+    "nameKey": "西馬込一丁目",
+    "total": 1247,
+    "apartments_3_5": 835,
+    "apartments_6_10": 412
+  },
+  {
+    "name": "東京都大田区西馬込二丁目",
+    "nameKey": "西馬込二丁目",
+    "total": 1159,
+    "apartments_3_5": 833,
+    "apartments_6_10": 326
+  },
+  {
+    "name": "東京都大田区南馬込一丁目",
+    "nameKey": "南馬込一丁目",
+    "total": 987,
+    "apartments_3_5": 564,
+    "apartments_6_10": 423
+  },
+  {
+    "name": "東京都大田区南馬込二丁目",
+    "nameKey": "南馬込二丁目",
+    "total": 616,
+    "apartments_3_5": 349,
+    "apartments_6_10": 267
+  },
+  {
+    "name": "東京都大田区南馬込三丁目",
+    "nameKey": "南馬込三丁目",
+    "total": 670,
+    "apartments_3_5": 526,
+    "apartments_6_10": 144
+  },
+  {
+    "name": "東京都大田区南馬込四丁目",
+    "nameKey": "南馬込四丁目",
+    "total": 606,
+    "apartments_3_5": 439,
+    "apartments_6_10": 167
+  },
+  {
+    "name": "東京都大田区南馬込五丁目",
+    "nameKey": "南馬込五丁目",
+    "total": 1297,
+    "apartments_3_5": 768,
+    "apartments_6_10": 529
+  },
+  {
+    "name": "東京都大田区南馬込六丁目",
+    "nameKey": "南馬込六丁目",
+    "total": 1422,
+    "apartments_3_5": 1148,
+    "apartments_6_10": 274
+  },
+  {
+    "name": "東京都大田区中央一丁目",
+    "nameKey": "中央一丁目",
+    "total": 458,
+    "apartments_3_5": 435,
+    "apartments_6_10": 23
+  },
+  {
+    "name": "東京都大田区中央二丁目",
+    "nameKey": "中央二丁目",
+    "total": 590,
+    "apartments_3_5": 303,
+    "apartments_6_10": 287
+  },
+  {
+    "name": "東京都大田区中央三丁目",
+    "nameKey": "中央三丁目",
+    "total": 891,
+    "apartments_3_5": 694,
+    "apartments_6_10": 197
+  },
+  {
+    "name": "東京都大田区中央四丁目",
+    "nameKey": "中央四丁目",
+    "total": 531,
+    "apartments_3_5": 442,
+    "apartments_6_10": 89
+  },
+  {
+    "name": "東京都大田区中央五丁目",
+    "nameKey": "中央五丁目",
+    "total": 208,
+    "apartments_3_5": 171,
+    "apartments_6_10": 37
+  },
+  {
+    "name": "東京都大田区中央六丁目",
+    "nameKey": "中央六丁目",
+    "total": 314,
+    "apartments_3_5": 260,
+    "apartments_6_10": 54
+  },
+  {
+    "name": "東京都大田区中央七丁目",
+    "nameKey": "中央七丁目",
+    "total": 592,
+    "apartments_3_5": 508,
+    "apartments_6_10": 84
+  },
+  {
+    "name": "東京都大田区中央八丁目",
+    "nameKey": "中央八丁目",
+    "total": 1111,
+    "apartments_3_5": 749,
+    "apartments_6_10": 362
+  },
+  {
+    "name": "東京都大田区池上一丁目",
+    "nameKey": "池上一丁目",
+    "total": 312,
+    "apartments_3_5": 287,
+    "apartments_6_10": 25
+  },
+  {
+    "name": "東京都大田区池上二丁目",
+    "nameKey": "池上二丁目",
+    "total": 510,
+    "apartments_3_5": 364,
+    "apartments_6_10": 146
+  },
+  {
+    "name": "東京都大田区池上三丁目",
+    "nameKey": "池上三丁目",
+    "total": 1694,
+    "apartments_3_5": 1271,
+    "apartments_6_10": 423
+  },
+  {
+    "name": "東京都大田区池上四丁目",
+    "nameKey": "池上四丁目",
+    "total": 1071,
+    "apartments_3_5": 721,
+    "apartments_6_10": 350
+  },
+  {
+    "name": "東京都大田区池上五丁目",
+    "nameKey": "池上五丁目",
+    "total": 988,
+    "apartments_3_5": 527,
+    "apartments_6_10": 461
+  },
+  {
+    "name": "東京都大田区池上六丁目",
+    "nameKey": "池上六丁目",
+    "total": 2405,
+    "apartments_3_5": 1771,
+    "apartments_6_10": 634
+  },
+  {
+    "name": "東京都大田区池上七丁目",
+    "nameKey": "池上七丁目",
+    "total": 1727,
+    "apartments_3_5": 1217,
+    "apartments_6_10": 510
+  },
+  {
+    "name": "東京都大田区池上八丁目",
+    "nameKey": "池上八丁目",
+    "total": 896,
+    "apartments_3_5": 594,
+    "apartments_6_10": 302
+  },
+  {
+    "name": "東京都大田区田園調布本町",
+    "nameKey": "田園調布本町",
+    "total": 1853,
+    "apartments_3_5": 1209,
+    "apartments_6_10": 644
+  },
+  {
+    "name": "東京都大田区田園調布南",
+    "nameKey": "田園調布南",
+    "total": 1110,
+    "apartments_3_5": 725,
+    "apartments_6_10": 385
+  },
+  {
+    "name": "東京都大田区東嶺町",
+    "nameKey": "東嶺町",
+    "total": 823,
+    "apartments_3_5": 576,
+    "apartments_6_10": 247
+  },
+  {
+    "name": "東京都大田区西嶺町",
+    "nameKey": "西嶺町",
+    "total": 570,
+    "apartments_3_5": 390,
+    "apartments_6_10": 180
+  },
+  {
+    "name": "東京都大田区北嶺町",
+    "nameKey": "北嶺町",
+    "total": 1568,
+    "apartments_3_5": 1146,
+    "apartments_6_10": 422
+  },
+  {
+    "name": "東京都大田区南雪谷一丁目",
+    "nameKey": "南雪谷一丁目",
+    "total": 1235,
+    "apartments_3_5": 783,
+    "apartments_6_10": 452
+  },
+  {
+    "name": "東京都大田区南雪谷二丁目",
+    "nameKey": "南雪谷二丁目",
+    "total": 910,
+    "apartments_3_5": 373,
+    "apartments_6_10": 537
+  },
+  {
+    "name": "東京都大田区南雪谷三丁目",
+    "nameKey": "南雪谷三丁目",
+    "total": 459,
+    "apartments_3_5": 389,
+    "apartments_6_10": 70
+  },
+  {
+    "name": "東京都大田区南雪谷四丁目",
+    "nameKey": "南雪谷四丁目",
+    "total": 121,
+    "apartments_3_5": 121,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区南雪谷五丁目",
+    "nameKey": "南雪谷五丁目",
+    "total": 406,
+    "apartments_3_5": 164,
+    "apartments_6_10": 242
+  },
+  {
+    "name": "東京都大田区田園調布一丁目",
+    "nameKey": "田園調布一丁目",
+    "total": 1469,
+    "apartments_3_5": 926,
+    "apartments_6_10": 543
+  },
+  {
+    "name": "東京都大田区田園調布二丁目",
+    "nameKey": "田園調布二丁目",
+    "total": 736,
+    "apartments_3_5": 455,
+    "apartments_6_10": 281
+  },
+  {
+    "name": "東京都大田区田園調布三丁目",
+    "nameKey": "田園調布三丁目",
+    "total": 11,
+    "apartments_3_5": 11,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区田園調布四丁目",
+    "nameKey": "田園調布四丁目",
+    "total": 46,
+    "apartments_3_5": 46,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区田園調布五丁目",
+    "nameKey": "田園調布五丁目",
+    "total": 165,
+    "apartments_3_5": 160,
+    "apartments_6_10": 5
+  },
+  {
+    "name": "東京都大田区雪谷大塚町",
+    "nameKey": "雪谷大塚町",
+    "total": 688,
+    "apartments_3_5": 277,
+    "apartments_6_10": 411
+  },
+  {
+    "name": "東京都大田区鵜の木一丁目",
+    "nameKey": "鵜の木一丁目",
+    "total": 838,
+    "apartments_3_5": 602,
+    "apartments_6_10": 236
+  },
+  {
+    "name": "東京都大田区鵜の木二丁目",
+    "nameKey": "鵜の木二丁目",
+    "total": 1664,
+    "apartments_3_5": 1274,
+    "apartments_6_10": 390
+  },
+  {
+    "name": "東京都大田区鵜の木三丁目",
+    "nameKey": "鵜の木三丁目",
+    "total": 1618,
+    "apartments_3_5": 1071,
+    "apartments_6_10": 547
+  },
+  {
+    "name": "東京都大田区南久が原一丁目",
+    "nameKey": "南久が原一丁目",
+    "total": 97,
+    "apartments_3_5": 97,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区南久が原二丁目",
+    "nameKey": "南久が原二丁目",
+    "total": 1042,
+    "apartments_3_5": 974,
+    "apartments_6_10": 68
+  },
+  {
+    "name": "東京都大田区千鳥一丁目",
+    "nameKey": "千鳥一丁目",
+    "total": 1324,
+    "apartments_3_5": 652,
+    "apartments_6_10": 672
+  },
+  {
+    "name": "東京都大田区千鳥二丁目",
+    "nameKey": "千鳥二丁目",
+    "total": 1165,
+    "apartments_3_5": 803,
+    "apartments_6_10": 362
+  },
+  {
+    "name": "東京都大田区千鳥三丁目",
+    "nameKey": "千鳥三丁目",
+    "total": 1360,
+    "apartments_3_5": 423,
+    "apartments_6_10": 937
+  },
+  {
+    "name": "東京都大田区仲池上一丁目",
+    "nameKey": "仲池上一丁目",
+    "total": 1318,
+    "apartments_3_5": 736,
+    "apartments_6_10": 582
+  },
+  {
+    "name": "東京都大田区仲池上二丁目",
+    "nameKey": "仲池上二丁目",
+    "total": 2131,
+    "apartments_3_5": 1025,
+    "apartments_6_10": 1106
+  },
+  {
+    "name": "東京都大田区久が原一丁目",
+    "nameKey": "久が原一丁目",
+    "total": 502,
+    "apartments_3_5": 132,
+    "apartments_6_10": 370
+  },
+  {
+    "name": "東京都大田区久が原二丁目",
+    "nameKey": "久が原二丁目",
+    "total": 1194,
+    "apartments_3_5": 619,
+    "apartments_6_10": 575
+  },
+  {
+    "name": "東京都大田区久が原三丁目",
+    "nameKey": "久が原三丁目",
+    "total": 631,
+    "apartments_3_5": 520,
+    "apartments_6_10": 111
+  },
+  {
+    "name": "東京都大田区久が原四丁目",
+    "nameKey": "久が原四丁目",
+    "total": 209,
+    "apartments_3_5": 209,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区久が原五丁目",
+    "nameKey": "久が原五丁目",
+    "total": 951,
+    "apartments_3_5": 303,
+    "apartments_6_10": 648
+  },
+  {
+    "name": "東京都大田区久が原六丁目",
+    "nameKey": "久が原六丁目",
+    "total": 79,
+    "apartments_3_5": 79,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区南千束一丁目",
+    "nameKey": "南千束一丁目",
+    "total": 527,
+    "apartments_3_5": 369,
+    "apartments_6_10": 158
+  },
+  {
+    "name": "東京都大田区南千束二丁目",
+    "nameKey": "南千束二丁目",
+    "total": 352,
+    "apartments_3_5": 325,
+    "apartments_6_10": 27
+  },
+  {
+    "name": "東京都大田区南千束三丁目",
+    "nameKey": "南千束三丁目",
+    "total": 573,
+    "apartments_3_5": 550,
+    "apartments_6_10": 23
+  },
+  {
+    "name": "東京都大田区石川町一丁目",
+    "nameKey": "石川町一丁目",
+    "total": 169,
+    "apartments_3_5": 169,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区石川町二丁目",
+    "nameKey": "石川町二丁目",
+    "total": 1289,
+    "apartments_3_5": 531,
+    "apartments_6_10": 758
+  },
+  {
+    "name": "東京都大田区東雪谷一丁目",
+    "nameKey": "東雪谷一丁目",
+    "total": 532,
+    "apartments_3_5": 251,
+    "apartments_6_10": 281
+  },
+  {
+    "name": "東京都大田区東雪谷二丁目",
+    "nameKey": "東雪谷二丁目",
+    "total": 1714,
+    "apartments_3_5": 901,
+    "apartments_6_10": 813
+  },
+  {
+    "name": "東京都大田区東雪谷三丁目",
+    "nameKey": "東雪谷三丁目",
+    "total": 665,
+    "apartments_3_5": 656,
+    "apartments_6_10": 9
+  },
+  {
+    "name": "東京都大田区東雪谷四丁目",
+    "nameKey": "東雪谷四丁目",
+    "total": 780,
+    "apartments_3_5": 337,
+    "apartments_6_10": 443
+  },
+  {
+    "name": "東京都大田区東雪谷五丁目",
+    "nameKey": "東雪谷五丁目",
+    "total": 625,
+    "apartments_3_5": 387,
+    "apartments_6_10": 238
+  },
+  {
+    "name": "東京都大田区上池台一丁目",
+    "nameKey": "上池台一丁目",
+    "total": 1409,
+    "apartments_3_5": 805,
+    "apartments_6_10": 604
+  },
+  {
+    "name": "東京都大田区上池台二丁目",
+    "nameKey": "上池台二丁目",
+    "total": 959,
+    "apartments_3_5": 732,
+    "apartments_6_10": 227
+  },
+  {
+    "name": "東京都大田区上池台三丁目",
+    "nameKey": "上池台三丁目",
+    "total": 700,
+    "apartments_3_5": 582,
+    "apartments_6_10": 118
+  },
+  {
+    "name": "東京都大田区上池台四丁目",
+    "nameKey": "上池台四丁目",
+    "total": 1084,
+    "apartments_3_5": 645,
+    "apartments_6_10": 439
+  },
+  {
+    "name": "東京都大田区上池台五丁目",
+    "nameKey": "上池台五丁目",
+    "total": 1752,
+    "apartments_3_5": 1297,
+    "apartments_6_10": 455
+  },
+  {
+    "name": "東京都大田区北千束一丁目",
+    "nameKey": "北千束一丁目",
+    "total": 1581,
+    "apartments_3_5": 1277,
+    "apartments_6_10": 304
+  },
+  {
+    "name": "東京都大田区北千束二丁目",
+    "nameKey": "北千束二丁目",
+    "total": 1611,
+    "apartments_3_5": 1113,
+    "apartments_6_10": 498
+  },
+  {
+    "name": "東京都大田区北千束三丁目",
+    "nameKey": "北千束三丁目",
+    "total": 967,
+    "apartments_3_5": 783,
+    "apartments_6_10": 184
+  },
+  {
+    "name": "東京都大田区北糀谷一丁目",
+    "nameKey": "北糀谷一丁目",
+    "total": 807,
+    "apartments_3_5": 568,
+    "apartments_6_10": 239
+  },
+  {
+    "name": "東京都大田区北糀谷二丁目",
+    "nameKey": "北糀谷二丁目",
+    "total": 613,
+    "apartments_3_5": 409,
+    "apartments_6_10": 204
+  },
+  {
+    "name": "東京都大田区西糀谷一丁目",
+    "nameKey": "西糀谷一丁目",
+    "total": 1458,
+    "apartments_3_5": 1134,
+    "apartments_6_10": 324
+  },
+  {
+    "name": "東京都大田区西糀谷二丁目",
+    "nameKey": "西糀谷二丁目",
+    "total": 1616,
+    "apartments_3_5": 937,
+    "apartments_6_10": 679
+  },
+  {
+    "name": "東京都大田区西糀谷三丁目",
+    "nameKey": "西糀谷三丁目",
+    "total": 1934,
+    "apartments_3_5": 1293,
+    "apartments_6_10": 641
+  },
+  {
+    "name": "東京都大田区西糀谷四丁目",
+    "nameKey": "西糀谷四丁目",
+    "total": 1622,
+    "apartments_3_5": 1251,
+    "apartments_6_10": 371
+  },
+  {
+    "name": "東京都大田区東糀谷一丁目",
+    "nameKey": "東糀谷一丁目",
+    "total": 1416,
+    "apartments_3_5": 720,
+    "apartments_6_10": 696
+  },
+  {
+    "name": "東京都大田区東糀谷二丁目",
+    "nameKey": "東糀谷二丁目",
+    "total": 818,
+    "apartments_3_5": 406,
+    "apartments_6_10": 412
+  },
+  {
+    "name": "東京都大田区東糀谷三丁目",
+    "nameKey": "東糀谷三丁目",
+    "total": 1131,
+    "apartments_3_5": 430,
+    "apartments_6_10": 701
+  },
+  {
+    "name": "東京都大田区東糀谷四丁目",
+    "nameKey": "東糀谷四丁目",
+    "total": 810,
+    "apartments_3_5": 227,
+    "apartments_6_10": 583
+  },
+  {
+    "name": "東京都大田区東糀谷五丁目",
+    "nameKey": "東糀谷五丁目",
+    "total": 177,
+    "apartments_3_5": 71,
+    "apartments_6_10": 106
+  },
+  {
+    "name": "東京都大田区東糀谷六丁目",
+    "nameKey": "東糀谷六丁目",
+    "total": 80,
+    "apartments_3_5": 80,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区萩中一丁目",
+    "nameKey": "萩中一丁目",
+    "total": 1138,
+    "apartments_3_5": 669,
+    "apartments_6_10": 469
+  },
+  {
+    "name": "東京都大田区萩中二丁目",
+    "nameKey": "萩中二丁目",
+    "total": 1188,
+    "apartments_3_5": 727,
+    "apartments_6_10": 461
+  },
+  {
+    "name": "東京都大田区萩中三丁目",
+    "nameKey": "萩中三丁目",
+    "total": 1844,
+    "apartments_3_5": 1119,
+    "apartments_6_10": 725
+  },
+  {
+    "name": "東京都大田区本羽田一丁目",
+    "nameKey": "本羽田一丁目",
+    "total": 1268,
+    "apartments_3_5": 693,
+    "apartments_6_10": 575
+  },
+  {
+    "name": "東京都大田区本羽田二丁目",
+    "nameKey": "本羽田二丁目",
+    "total": 1146,
+    "apartments_3_5": 536,
+    "apartments_6_10": 610
+  },
+  {
+    "name": "東京都大田区本羽田三丁目",
+    "nameKey": "本羽田三丁目",
+    "total": 1035,
+    "apartments_3_5": 335,
+    "apartments_6_10": 700
+  },
+  {
+    "name": "東京都大田区羽田旭町",
+    "nameKey": "羽田旭町",
+    "total": 288,
+    "apartments_3_5": 41,
+    "apartments_6_10": 247
+  },
+  {
+    "name": "東京都大田区羽田一丁目",
+    "nameKey": "羽田一丁目",
+    "total": 789,
+    "apartments_3_5": 500,
+    "apartments_6_10": 289
+  },
+  {
+    "name": "東京都大田区羽田二丁目",
+    "nameKey": "羽田二丁目",
+    "total": 348,
+    "apartments_3_5": 321,
+    "apartments_6_10": 27
+  },
+  {
+    "name": "東京都大田区羽田三丁目",
+    "nameKey": "羽田三丁目",
+    "total": 404,
+    "apartments_3_5": 363,
+    "apartments_6_10": 41
+  },
+  {
+    "name": "東京都大田区羽田四丁目",
+    "nameKey": "羽田四丁目",
+    "total": 1079,
+    "apartments_3_5": 882,
+    "apartments_6_10": 197
+  },
+  {
+    "name": "東京都大田区羽田五丁目",
+    "nameKey": "羽田五丁目",
+    "total": 1150,
+    "apartments_3_5": 736,
+    "apartments_6_10": 414
+  },
+  {
+    "name": "東京都大田区羽田六丁目",
+    "nameKey": "羽田六丁目",
+    "total": 308,
+    "apartments_3_5": 229,
+    "apartments_6_10": 79
+  },
+  {
+    "name": "東京都大田区羽田空港一丁目",
+    "nameKey": "羽田空港一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区羽田空港二丁目",
+    "nameKey": "羽田空港二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区羽田空港三丁目",
+    "nameKey": "羽田空港三丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区西六郷一丁目",
+    "nameKey": "西六郷一丁目",
+    "total": 972,
+    "apartments_3_5": 573,
+    "apartments_6_10": 399
+  },
+  {
+    "name": "東京都大田区西六郷二丁目",
+    "nameKey": "西六郷二丁目",
+    "total": 747,
+    "apartments_3_5": 695,
+    "apartments_6_10": 52
+  },
+  {
+    "name": "東京都大田区西六郷三丁目",
+    "nameKey": "西六郷三丁目",
+    "total": 713,
+    "apartments_3_5": 494,
+    "apartments_6_10": 219
+  },
+  {
+    "name": "東京都大田区西六郷四丁目",
+    "nameKey": "西六郷四丁目",
+    "total": 1457,
+    "apartments_3_5": 468,
+    "apartments_6_10": 989
+  },
+  {
+    "name": "東京都大田区仲六郷一丁目",
+    "nameKey": "仲六郷一丁目",
+    "total": 1569,
+    "apartments_3_5": 1008,
+    "apartments_6_10": 561
+  },
+  {
+    "name": "東京都大田区仲六郷二丁目",
+    "nameKey": "仲六郷二丁目",
+    "total": 1410,
+    "apartments_3_5": 1070,
+    "apartments_6_10": 340
+  },
+  {
+    "name": "東京都大田区仲六郷三丁目",
+    "nameKey": "仲六郷三丁目",
+    "total": 1223,
+    "apartments_3_5": 480,
+    "apartments_6_10": 743
+  },
+  {
+    "name": "東京都大田区仲六郷四丁目",
+    "nameKey": "仲六郷四丁目",
+    "total": 1166,
+    "apartments_3_5": 722,
+    "apartments_6_10": 444
+  },
+  {
+    "name": "東京都大田区南蒲田一丁目",
+    "nameKey": "南蒲田一丁目",
+    "total": 1436,
+    "apartments_3_5": 787,
+    "apartments_6_10": 649
+  },
+  {
+    "name": "東京都大田区南蒲田二丁目",
+    "nameKey": "南蒲田二丁目",
+    "total": 1580,
+    "apartments_3_5": 952,
+    "apartments_6_10": 628
+  },
+  {
+    "name": "東京都大田区南蒲田三丁目",
+    "nameKey": "南蒲田三丁目",
+    "total": 1143,
+    "apartments_3_5": 806,
+    "apartments_6_10": 337
+  },
+  {
+    "name": "東京都大田区東六郷一丁目",
+    "nameKey": "東六郷一丁目",
+    "total": 1003,
+    "apartments_3_5": 654,
+    "apartments_6_10": 349
+  },
+  {
+    "name": "東京都大田区東六郷二丁目",
+    "nameKey": "東六郷二丁目",
+    "total": 1096,
+    "apartments_3_5": 642,
+    "apartments_6_10": 454
+  },
+  {
+    "name": "東京都大田区東六郷三丁目",
+    "nameKey": "東六郷三丁目",
+    "total": 982,
+    "apartments_3_5": 575,
+    "apartments_6_10": 407
+  },
+  {
+    "name": "東京都大田区南六郷一丁目",
+    "nameKey": "南六郷一丁目",
+    "total": 1032,
+    "apartments_3_5": 600,
+    "apartments_6_10": 432
+  },
+  {
+    "name": "東京都大田区南六郷二丁目",
+    "nameKey": "南六郷二丁目",
+    "total": 1663,
+    "apartments_3_5": 1176,
+    "apartments_6_10": 487
+  },
+  {
+    "name": "東京都大田区南六郷三丁目",
+    "nameKey": "南六郷三丁目",
+    "total": 1055,
+    "apartments_3_5": 272,
+    "apartments_6_10": 783
+  },
+  {
+    "name": "東京都大田区下丸子一丁目",
+    "nameKey": "下丸子一丁目",
+    "total": 1361,
+    "apartments_3_5": 867,
+    "apartments_6_10": 494
+  },
+  {
+    "name": "東京都大田区下丸子二丁目",
+    "nameKey": "下丸子二丁目",
+    "total": 1851,
+    "apartments_3_5": 1101,
+    "apartments_6_10": 750
+  },
+  {
+    "name": "東京都大田区下丸子三丁目",
+    "nameKey": "下丸子三丁目",
+    "total": 1061,
+    "apartments_3_5": 843,
+    "apartments_6_10": 218
+  },
+  {
+    "name": "東京都大田区下丸子四丁目",
+    "nameKey": "下丸子四丁目",
+    "total": 827,
+    "apartments_3_5": 758,
+    "apartments_6_10": 69
+  },
+  {
+    "name": "東京都大田区矢口一丁目",
+    "nameKey": "矢口一丁目",
+    "total": 2011,
+    "apartments_3_5": 876,
+    "apartments_6_10": 1135
+  },
+  {
+    "name": "東京都大田区矢口二丁目",
+    "nameKey": "矢口二丁目",
+    "total": 1821,
+    "apartments_3_5": 1321,
+    "apartments_6_10": 500
+  },
+  {
+    "name": "東京都大田区矢口三丁目",
+    "nameKey": "矢口三丁目",
+    "total": 881,
+    "apartments_3_5": 497,
+    "apartments_6_10": 384
+  },
+  {
+    "name": "東京都大田区東矢口一丁目",
+    "nameKey": "東矢口一丁目",
+    "total": 989,
+    "apartments_3_5": 661,
+    "apartments_6_10": 328
+  },
+  {
+    "name": "東京都大田区東矢口二丁目",
+    "nameKey": "東矢口二丁目",
+    "total": 1287,
+    "apartments_3_5": 689,
+    "apartments_6_10": 598
+  },
+  {
+    "name": "東京都大田区東矢口三丁目",
+    "nameKey": "東矢口三丁目",
+    "total": 1565,
+    "apartments_3_5": 751,
+    "apartments_6_10": 814
+  },
+  {
+    "name": "東京都大田区多摩川一丁目",
+    "nameKey": "多摩川一丁目",
+    "total": 2122,
+    "apartments_3_5": 1382,
+    "apartments_6_10": 740
+  },
+  {
+    "name": "東京都大田区多摩川二丁目",
+    "nameKey": "多摩川二丁目",
+    "total": 2248,
+    "apartments_3_5": 1078,
+    "apartments_6_10": 1170
+  },
+  {
+    "name": "東京都大田区新蒲田一丁目",
+    "nameKey": "新蒲田一丁目",
+    "total": 1026,
+    "apartments_3_5": 605,
+    "apartments_6_10": 421
+  },
+  {
+    "name": "東京都大田区新蒲田二丁目",
+    "nameKey": "新蒲田二丁目",
+    "total": 653,
+    "apartments_3_5": 489,
+    "apartments_6_10": 164
+  },
+  {
+    "name": "東京都大田区新蒲田三丁目",
+    "nameKey": "新蒲田三丁目",
+    "total": 767,
+    "apartments_3_5": 535,
+    "apartments_6_10": 232
+  },
+  {
+    "name": "東京都大田区西蒲田一丁目",
+    "nameKey": "西蒲田一丁目",
+    "total": 583,
+    "apartments_3_5": 400,
+    "apartments_6_10": 183
+  },
+  {
+    "name": "東京都大田区西蒲田二丁目",
+    "nameKey": "西蒲田二丁目",
+    "total": 387,
+    "apartments_3_5": 313,
+    "apartments_6_10": 74
+  },
+  {
+    "name": "東京都大田区西蒲田三丁目",
+    "nameKey": "西蒲田三丁目",
+    "total": 567,
+    "apartments_3_5": 495,
+    "apartments_6_10": 72
+  },
+  {
+    "name": "東京都大田区西蒲田四丁目",
+    "nameKey": "西蒲田四丁目",
+    "total": 1151,
+    "apartments_3_5": 909,
+    "apartments_6_10": 242
+  },
+  {
+    "name": "東京都大田区西蒲田五丁目",
+    "nameKey": "西蒲田五丁目",
+    "total": 1070,
+    "apartments_3_5": 834,
+    "apartments_6_10": 236
+  },
+  {
+    "name": "東京都大田区西蒲田六丁目",
+    "nameKey": "西蒲田六丁目",
+    "total": 1419,
+    "apartments_3_5": 928,
+    "apartments_6_10": 491
+  },
+  {
+    "name": "東京都大田区西蒲田七丁目",
+    "nameKey": "西蒲田七丁目",
+    "total": 2449,
+    "apartments_3_5": 485,
+    "apartments_6_10": 1964
+  },
+  {
+    "name": "東京都大田区西蒲田八丁目",
+    "nameKey": "西蒲田八丁目",
+    "total": 1035,
+    "apartments_3_5": 399,
+    "apartments_6_10": 636
+  },
+  {
+    "name": "東京都大田区蒲田一丁目",
+    "nameKey": "蒲田一丁目",
+    "total": 2841,
+    "apartments_3_5": 2052,
+    "apartments_6_10": 789
+  },
+  {
+    "name": "東京都大田区蒲田二丁目",
+    "nameKey": "蒲田二丁目",
+    "total": 1194,
+    "apartments_3_5": 957,
+    "apartments_6_10": 237
+  },
+  {
+    "name": "東京都大田区蒲田三丁目",
+    "nameKey": "蒲田三丁目",
+    "total": 743,
+    "apartments_3_5": 592,
+    "apartments_6_10": 151
+  },
+  {
+    "name": "東京都大田区蒲田四丁目",
+    "nameKey": "蒲田四丁目",
+    "total": 1175,
+    "apartments_3_5": 476,
+    "apartments_6_10": 699
+  },
+  {
+    "name": "東京都大田区蒲田五丁目",
+    "nameKey": "蒲田五丁目",
+    "total": 1287,
+    "apartments_3_5": 139,
+    "apartments_6_10": 1148
+  },
+  {
+    "name": "東京都大田区蒲田本町一丁目",
+    "nameKey": "蒲田本町一丁目",
+    "total": 438,
+    "apartments_3_5": 295,
+    "apartments_6_10": 143
+  },
+  {
+    "name": "東京都大田区蒲田本町二丁目",
+    "nameKey": "蒲田本町二丁目",
+    "total": 946,
+    "apartments_3_5": 656,
+    "apartments_6_10": 290
+  },
+  {
+    "name": "東京都大田区東蒲田一丁目",
+    "nameKey": "東蒲田一丁目",
+    "total": 712,
+    "apartments_3_5": 566,
+    "apartments_6_10": 146
+  },
+  {
+    "name": "東京都大田区東蒲田二丁目",
+    "nameKey": "東蒲田二丁目",
+    "total": 778,
+    "apartments_3_5": 679,
+    "apartments_6_10": 99
+  },
+  {
+    "name": "東京都大田区東海一丁目",
+    "nameKey": "東海一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区東海二丁目",
+    "nameKey": "東海二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区東海三丁目",
+    "nameKey": "東海三丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区東海四丁目",
+    "nameKey": "東海四丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区東海五丁目",
+    "nameKey": "東海五丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区東海六丁目",
+    "nameKey": "東海六丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島一丁目",
+    "nameKey": "城南島一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島二丁目",
+    "nameKey": "城南島二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島三丁目",
+    "nameKey": "城南島三丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島四丁目",
+    "nameKey": "城南島四丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島五丁目",
+    "nameKey": "城南島五丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島六丁目",
+    "nameKey": "城南島六丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区城南島七丁目",
+    "nameKey": "城南島七丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区京浜島一丁目",
+    "nameKey": "京浜島一丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区京浜島二丁目",
+    "nameKey": "京浜島二丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区京浜島三丁目",
+    "nameKey": "京浜島三丁目",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区多摩川河川敷（上流）",
+    "nameKey": "多摩川河川敷（上流）",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区多摩川河川敷（下流）",
+    "nameKey": "多摩川河川敷（下流）",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区ふるさとの浜辺公園",
+    "nameKey": "ふるさとの浜辺公園",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区令和島",
+    "nameKey": "令和島",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  },
+  {
+    "name": "東京都大田区令和島",
+    "nameKey": "令和島",
+    "total": 0,
+    "apartments_3_5": 0,
+    "apartments_6_10": 0
+  }
+]

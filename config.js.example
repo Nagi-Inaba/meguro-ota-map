@@ -1,0 +1,6 @@
+// このファイルを config.js にコピーし、Mapbox のアクセストークンを設定してください。
+// config.js は .gitignore に含まれており、リポジトリにコミットされません。
+// 公開時: Mapbox ダッシュボードでトークンの URL 制限（公開サイトのドメイン）を設定することを推奨します。
+var MAPBOX_ACCESS_TOKEN = 'YOUR_MAPBOX_ACCESS_TOKEN';
+
+

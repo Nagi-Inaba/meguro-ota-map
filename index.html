@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>目黒区・大田区 町丁別世帯数地図</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="config.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; }
+    #map { width: 100%; height: 100vh; }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    #controls label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+    #legend {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      z-index: 1;
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    #legend h4 { margin: 0 0 8px 0; font-size: 13px; }
+    #legend ul { margin: 0; padding-left: 18px; }
+    #legend li { margin: 4px 0; }
+    #legend .legend-item { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    #legend .legend-swatch { flex-shrink: 0; border-radius: 2px; }
+    #legend .legend-swatch.fill { width: 16px; height: 12px; border: 1px solid #2d5a3d; }
+    #legend .legend-swatch.line { width: 24px; height: 0; border-top: 4px solid #c00; }
+    #legend .legend-swatch.circle { width: 12px; height: 12px; border-radius: 50%; }
+    #legend .legend-gradient { width: 80px; height: 10px; border-radius: 2px; background: linear-gradient(to right, #c8e6c9, #1b5e20); }
+    #legend .legend-scale-labels { display: flex; justify-content: space-between; width: 80px; font-size: 11px; color: #666; margin-top: 2px; }
+    .mapboxgl-popup-content { padding: 10px 14px; min-width: 120px; }
+    .mapboxgl-popup-content h3 { margin: 0 0 6px 0; font-size: 14px; }
+    .mapboxgl-popup-content p { margin: 0; font-size: 13px; color: #333; }
+    .mapboxgl-popup-content p.popup-verify { margin-top: 6px; font-size: 12px; color: #666; }
+    .chart-marker {
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 2px;
+      width: 52px;
+      height: 52px;
+    }
+    .chart-marker canvas {
+      display: block;
+      border-radius: 50%;
+      width: 48px !important;
+      height: 48px !important;
+    }
+    .chart-marker .total-label {
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label>
+      <input type="checkbox" id="usePieChart" />
+      円グラフ表示（3～5階建 / 6～10階建）
+    </label>
+    <label>
+      <input type="checkbox" id="showSpeechSpots" />
+      演説スポットを表示
+    </label>
+  </div>
+  <div id="legend">
+    <h4>凡例</h4>
+    <div class="legend-item">
+      <span>目黒区：町丁エリア（境界: Shapefile / 数値: Excel 合計世帯数）</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-swatch fill" style="background:#c8e6c9;border-color:#2e7d32;"></span>
+      <span>大田区：町丁エリア（境界: Shapefile / 数値: Excel 合計世帯数・色分けは目黒区と同じ）</span>
+    </div>
+    <div class="legend-item legend-scale">
+      <span class="legend-swatch fill" style="background:#9e9e9e;"></span>
+      <span>500未満</span>
+    </div>
+    <div class="legend-item legend-scale">
+      <span class="legend-swatch fill" style="background:#90caf9;"></span>
+      <span>500〜1000</span>
+    </div>
+    <div class="legend-item legend-scale">
+      <span class="legend-swatch fill" style="background:#ffee58;"></span>
+      <span>1000〜1500</span>
+    </div>
+    <div class="legend-item legend-scale">
+      <span class="legend-swatch fill" style="background:#ef5350;"></span>
+      <span>1500以上</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-swatch circle" style="background:#6b9bd1;"></span>
+      <span>共同住宅 3～5階建</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-swatch circle" style="background:#e8a838;"></span>
+      <span>共同住宅 6～10階建</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-swatch circle" style="background:#9c27b0;"></span>
+      <span>演説スポット（施設名・住所）</span>
+    </div>
+    <div class="legend-item" style="margin-top:6px;">
+      <span style="font-weight:bold;">数値</span>
+      <span>＝ 合計世帯数（Excel）</span>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    // Mapbox アクセストークン（取得済みのトークンに差し替えてください）
+    mapboxgl.accessToken = typeof MAPBOX_ACCESS_TOKEN !== 'undefined' ? MAPBOX_ACCESS_TOKEN : '';
+
+    if (!mapboxgl.accessToken) {
+      document.body.innerHTML = '<div style="padding:20px;font-size:16px;">MAPBOX_ACCESS_TOKEN を設定してください。config.js で MAPBOX_ACCESS_TOKEN を定義するか、index.html 内の mapboxgl.accessToken にトークンを直接記入してください。</div>';
+      throw new Error('No Mapbox token');
+    }
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v11',
+      center: [139.6982, 35.6339],
+      zoom: 13
+    });
+
+    let householdsData = null;
+    let otaHouseholdsData = null;
+    let householdDisplayPoints = [];
+    let otaDisplayPoints = [];
+    let pieMarkers = [];
+    let otaPieMarkers = [];
+
+    const KANJI_TO_NUM = { 零: '0', 〇: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
+    function toCanonicalNum(str) {
+      if (!str) return '';
+      let s = str;
+      for (const [k, v] of Object.entries(KANJI_TO_NUM)) s = s.split(k).join(v);
+      return s.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
+    }
+    function normalizeChome(str) {
+      if (!str) return '';
+      return str.replace(/^東京都目黒区/, '').replace(/\s+/g, '');
+    }
+    function normalizeChomeOta(str) {
+      if (!str) return '';
+      return str.replace(/^東京都大田区/, '').replace(/\s+/g, '');
+    }
+
+    map.on('load', () => {
+      Promise.all([
+        fetch('./geojson/meguro-shapefile-areas.json').then((r) => r.ok ? r.json() : null),
+        fetch('./geojson/ota-shapefile-areas.json').then((r) => r.ok ? r.json() : null),
+        fetch('./geojson/chome-households.json').then((r) => r.ok ? r.json() : []),
+        fetch('./geojson/chome-households-ota.json').then((r) => r.ok ? r.json() : []),
+        fetch('./geojson/speech-spots.json').then((r) => r.ok ? r.json() : { type: 'FeatureCollection', features: [] })
+      ])
+        .then(([areasGeoJSON, otaGeoJSON, data, otaData, speechSpots]) => {
+          if (!areasGeoJSON?.features?.length) {
+            console.error('meguro-shapefile-areas.json を読み込めません。npm run build:shapefile を実行してください。');
+            return;
+          }
+          householdsData = data;
+          otaHouseholdsData = otaData || [];
+          const nameToTotal = new Map();
+          for (const d of data) {
+            const key = toCanonicalNum(normalizeChome(d.name));
+            if (key) nameToTotal.set(key, d.total);
+            const key2 = d.nameKey ? toCanonicalNum(d.nameKey) : '';
+            if (key2) nameToTotal.set(key2, d.total);
+          }
+          function lookupExcel(name) {
+            if (!name) return null;
+            const k1 = toCanonicalNum(name);
+            const k2 = toCanonicalNum(normalizeChome(name));
+            return data.find((r) => toCanonicalNum(normalizeChome(r.name)) === k1 || toCanonicalNum(normalizeChome(r.name)) === k2 || (r.nameKey && toCanonicalNum(r.nameKey) === k1));
+          }
+          // ポリゴン色・ラベル: 町丁名は Shapefile の S_NAME を使用。数値は Excel 合計世帯数（なければ Shapefile SETAI）
+          // 色分け: 500未満=グレー, 500〜1000=青, 1000〜1500=緑, 1500以上=赤（全て同じ）
+          for (const f of areasGeoJSON.features) {
+            const sName = (f.properties?.S_NAME || '').trim(); // 町丁名はシェイプデータのみ
+            const excel = lookupExcel(sName);
+            const total = excel ? excel.total : (f.properties?.SETAI ?? 0);
+            f.properties = f.properties || {};
+            f.properties.total = total;
+            f.properties.name = sName; // 表示用町丁名＝S_NAME
+          }
+
+          // ラベル位置: Shapefile の X_CODE, Y_CODE。町丁名は S_NAME、数値は Excel 合計世帯数
+          householdDisplayPoints = [];
+          const labelFeatures = areasGeoJSON.features
+            .filter((f) => f.properties?.X_CODE != null && f.properties?.Y_CODE != null)
+            .map((f) => {
+              const sName = (f.properties?.S_NAME || '').trim(); // シェイプデータの町丁名
+              const excel = lookupExcel(sName);
+              const total = excel ? excel.total : (f.properties?.SETAI ?? 0);
+              householdDisplayPoints.push({
+                lng: Number(f.properties.X_CODE),
+                lat: Number(f.properties.Y_CODE),
+                name: sName,
+                total: total,
+                apartments_3_5: excel?.apartments_3_5 ?? 0,
+                apartments_6_10: excel?.apartments_6_10 ?? 0
+              });
+              return {
+                type: 'Feature',
+                properties: { name: sName, total: total, apartments_3_5: excel?.apartments_3_5 ?? 0, apartments_6_10: excel?.apartments_6_10 ?? 0 },
+                geometry: { type: 'Point', coordinates: [Number(f.properties.X_CODE), Number(f.properties.Y_CODE)] }
+              };
+            });
+
+          map.addSource('meguro-areas', {
+            type: 'geojson',
+            data: areasGeoJSON
+          });
+          map.addLayer({
+            id: 'meguro-areas-fill',
+            type: 'fill',
+            source: 'meguro-areas',
+            paint: {
+              'fill-color': [
+                'step',
+                ['coalesce', ['get', 'total'], 0],
+                '#9e9e9e',
+                500, '#90caf9',
+                1000, '#ffee58',
+                1500, '#ef5350'
+              ],
+              'fill-opacity': 0.75,
+              'fill-outline-color': '#37474f'
+            }
+          });
+          map.addLayer({
+            id: 'meguro-areas-line',
+            type: 'line',
+            source: 'meguro-areas',
+            paint: {
+              'line-color': '#37474f',
+              'line-width': 1
+            }
+          });
+
+          map.addSource('households', {
+            type: 'geojson',
+            data: { type: 'FeatureCollection', features: labelFeatures }
+          });
+          // 世帯数ラベル（下にオフセットして町名と干渉しない）
+          map.addLayer({
+            id: 'households-labels',
+            type: 'symbol',
+            source: 'households',
+            layout: {
+              'text-field': ['get', 'total'],
+              'text-size': 12,
+              'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+              'text-anchor': 'center',
+              'text-offset': [0, 1.2]
+            },
+            paint: {
+              'text-color': '#1a1a1a',
+              'text-halo-color': '#fff',
+              'text-halo-width': 2
+            }
+          });
+          // 町丁名ラベル（黒字・最前面。上にオフセット、世帯数は下に表示）
+          map.addLayer({
+            id: 'households-chome-names',
+            type: 'symbol',
+            source: 'households',
+            minzoom: 12,
+            layout: {
+              'text-field': ['get', 'name'],
+              'text-size': 11,
+              'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
+              'text-anchor': 'center',
+              'text-offset': [0, -2]
+            },
+            paint: {
+              'text-color': '#000000',
+              'text-halo-color': '#ffffff',
+              'text-halo-width': 2
+            }
+          });
+
+          // 大田区ポリゴン（目黒区と同じく Excel 合計世帯数で色分け・ラベル・ポップアップ）
+          if (otaGeoJSON?.features?.length) {
+            function lookupExcelOta(name) {
+              if (!name || !otaData?.length) return null;
+              const k1 = toCanonicalNum(name);
+              const k2 = toCanonicalNum(normalizeChomeOta(name));
+              return otaData.find((r) => toCanonicalNum(r.nameKey) === k1 || toCanonicalNum(normalizeChomeOta(r.name)) === k1 || toCanonicalNum(r.nameKey) === k2) || null;
+            }
+            for (const f of otaGeoJSON.features) {
+              const sName = (f.properties?.S_NAME || '').trim();
+              const excel = lookupExcelOta(sName);
+              const total = excel ? excel.total : (f.properties?.SETAI ?? 0);
+              f.properties = f.properties || {};
+              f.properties.total = total;
+              f.properties.name = sName;
+            }
+            map.addSource('ota-areas', {
+              type: 'geojson',
+              data: otaGeoJSON
+            });
+            map.addLayer({
+              id: 'ota-areas-fill',
+              type: 'fill',
+              source: 'ota-areas',
+              paint: {
+                'fill-color': [
+                  'step',
+                  ['coalesce', ['get', 'total'], 0],
+                  '#9e9e9e',
+                  500, '#90caf9',
+                  1000, '#ffee58',
+                  1500, '#ef5350'
+                ],
+                'fill-opacity': 0.75,
+                'fill-outline-color': '#2e7d32'
+              }
+            });
+            map.addLayer({
+              id: 'ota-areas-line',
+              type: 'line',
+              source: 'ota-areas',
+              paint: {
+                'line-color': '#2e7d32',
+                'line-width': 1
+              }
+            });
+            const otaLabelFeatures = otaGeoJSON.features
+              .filter((f) => f.properties?.X_CODE != null && f.properties?.Y_CODE != null)
+              .map((f) => {
+                const sName = (f.properties?.S_NAME || '').trim();
+                const excel = lookupExcelOta(sName);
+                const total = excel ? excel.total : (f.properties?.SETAI ?? 0);
+                otaDisplayPoints.push({
+                  lng: Number(f.properties.X_CODE),
+                  lat: Number(f.properties.Y_CODE),
+                  name: sName,
+                  total: total,
+                  apartments_3_5: excel?.apartments_3_5 ?? 0,
+                  apartments_6_10: excel?.apartments_6_10 ?? 0
+                });
+                return {
+                  type: 'Feature',
+                  properties: {
+                    name: sName,
+                    total: total,
+                    apartments_3_5: excel?.apartments_3_5 ?? 0,
+                    apartments_6_10: excel?.apartments_6_10 ?? 0
+                  },
+                  geometry: { type: 'Point', coordinates: [Number(f.properties.X_CODE), Number(f.properties.Y_CODE)] }
+                };
+              });
+            map.addSource('ota-households', {
+              type: 'geojson',
+              data: { type: 'FeatureCollection', features: otaLabelFeatures }
+            });
+            map.addLayer({
+              id: 'ota-labels',
+              type: 'symbol',
+              source: 'ota-households',
+              layout: {
+                'text-field': ['get', 'total'],
+                'text-size': 12,
+                'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                'text-anchor': 'center',
+                'text-offset': [0, 1.2]
+              },
+              paint: {
+                'text-color': '#1a1a1a',
+                'text-halo-color': '#fff',
+                'text-halo-width': 2
+              }
+            });
+            map.addLayer({
+              id: 'ota-chome-names',
+              type: 'symbol',
+              source: 'ota-households',
+              minzoom: 12,
+              layout: {
+                'text-field': ['get', 'name'],
+                'text-size': 11,
+                'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
+                'text-anchor': 'center',
+                'text-offset': [0, -2]
+              },
+              paint: {
+                'text-color': '#000000',
+                'text-halo-color': '#ffffff',
+                'text-halo-width': 2
+              }
+            });
+          }
+
+          // 演説スポット（施設名・住所）をプロット
+          if (speechSpots?.features?.length) {
+            map.addSource('speech-spots', {
+              type: 'geojson',
+              data: speechSpots
+            });
+            map.addLayer({
+              id: 'speech-spots-circle',
+              type: 'circle',
+              source: 'speech-spots',
+              layout: {
+                visibility: document.getElementById('showSpeechSpots').checked ? 'visible' : 'none'
+              },
+              paint: {
+                'circle-radius': 8,
+                'circle-color': '#9c27b0',
+                'circle-stroke-width': 2,
+                'circle-stroke-color': '#fff'
+              }
+            });
+          }
+
+          updateDisplayMode();
+        })
+        .catch((e) => console.error('Failed to load GeoJSON data', e));
+
+      // クリック時は演説スポットを優先（ポリゴンと重なっていても施設名を表示）
+      // 少し広い範囲で検索して円が小さい演説スポットも確実に反応するようにする
+      const clickRadius = 20;
+      map.on('click', (e) => {
+        const box = [[e.point.x - clickRadius, e.point.y - clickRadius], [e.point.x + clickRadius, e.point.y + clickRadius]];
+        const features = map.queryRenderedFeatures(box, {
+          layers: ['speech-spots-circle', 'meguro-areas-fill', 'ota-areas-fill']
+        });
+        const speechSpot = features.find((f) => f.layer.id === 'speech-spots-circle');
+        const meguroPolygon = features.find((f) => f.layer.id === 'meguro-areas-fill');
+        const otaPolygon = features.find((f) => f.layer.id === 'ota-areas-fill');
+
+        if (speechSpot) {
+          const p = speechSpot.properties || {};
+          const name = p.name || '施設';
+          const address = p.address || '';
+          let html = '<h3>' + name + '</h3>';
+          if (address) html += '<p>' + address + '</p>';
+          new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+          return;
+        }
+        if (otaPolygon) {
+          const name = otaPolygon.properties?.S_NAME ?? '';
+          const d = otaHouseholdsData && otaHouseholdsData.find((r) => toCanonicalNum(r.nameKey) === toCanonicalNum(name) || toCanonicalNum(normalizeChomeOta(r.name)) === toCanonicalNum(name));
+          let html = '<h3>' + (name || '町丁') + '（大田区）</h3>';
+          if (d) {
+            html += '<p>合計世帯数: ' + d.total + '</p>';
+            if (d.apartments_3_5 != null) html += '<p>共同住宅 3～5階建: ' + d.apartments_3_5 + '</p>';
+            if (d.apartments_6_10 != null) html += '<p>共同住宅 6～10階建: ' + d.apartments_6_10 + '</p>';
+            const sumBreakdown = (d.apartments_3_5 || 0) + (d.apartments_6_10 || 0);
+            const consistent = sumBreakdown === d.total;
+            html += '<p class="popup-verify">3～5階+6～10階 = ' + sumBreakdown + (consistent ? '（合計と一致）' : ' ※合計(' + d.total + ')と異なります') + '</p>';
+          } else {
+            const setai = otaPolygon.properties?.SETAI ?? 0;
+            html += '<p>世帯数（Shapefile SETAI）: ' + setai + '</p>';
+          }
+          new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+          return;
+        }
+        if (meguroPolygon) {
+          const name = meguroPolygon.properties?.S_NAME ?? '';
+          const d = householdsData && householdsData.find((r) => toCanonicalNum(normalizeChome(r.name)) === toCanonicalNum(name) || (r.nameKey && toCanonicalNum(r.nameKey) === toCanonicalNum(name)));
+          let html = '<h3>' + (name || '町丁') + '（目黒区）</h3>';
+          if (d) {
+            html += '<p>合計世帯数: ' + d.total + '</p>';
+            if (d.apartments_3_5 != null) html += '<p>共同住宅 3～5階建: ' + d.apartments_3_5 + '</p>';
+            if (d.apartments_6_10 != null) html += '<p>共同住宅 6～10階建: ' + d.apartments_6_10 + '</p>';
+            const sumBreakdown = (d.apartments_3_5 || 0) + (d.apartments_6_10 || 0);
+            const consistent = sumBreakdown === d.total;
+            html += '<p class="popup-verify">3～5階+6～10階 = ' + sumBreakdown + (consistent ? '（合計と一致）' : ' ※合計(' + d.total + ')と異なります') + '</p>';
+          } else {
+            const setai = meguroPolygon.properties?.SETAI ?? meguroPolygon.properties?.total ?? 0;
+            html += '<p>世帯数（Shapefile SETAI）: ' + setai + '</p>';
+          }
+          new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+        }
+      });
+
+      map.on('mouseenter', 'speech-spots-circle', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'speech-spots-circle', () => { map.getCanvas().style.cursor = ''; });
+      map.on('mouseenter', 'meguro-areas-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'meguro-areas-fill', () => { map.getCanvas().style.cursor = ''; });
+      map.on('mouseenter', 'ota-areas-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'ota-areas-fill', () => { map.getCanvas().style.cursor = ''; });
+    });
+
+    function updateDisplayMode() {
+      const usePie = document.getElementById('usePieChart').checked;
+      pieMarkers.forEach((m) => m.remove());
+      pieMarkers = [];
+      otaPieMarkers.forEach((m) => m.remove());
+      otaPieMarkers = [];
+      const labelsLayer = map.getLayer('households-labels');
+      if (labelsLayer) map.removeLayer('households-labels');
+      const otaLabelsLayer = map.getLayer('ota-labels');
+      if (otaLabelsLayer) map.removeLayer('ota-labels');
+
+      if (usePie && householdDisplayPoints.length) {
+        householdDisplayPoints.forEach((d) => { const m = addPieMarker(d); if (m) pieMarkers.push(m); });
+      } else if (map.getSource('households')) {
+        map.addLayer({
+          id: 'households-labels',
+          type: 'symbol',
+          source: 'households',
+          layout: {
+            'text-field': ['get', 'total'],
+            'text-size': 12,
+            'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+            'text-anchor': 'center',
+            'text-offset': [0, 1.2]
+          },
+          paint: {
+            'text-color': '#1a1a1a',
+            'text-halo-color': '#fff',
+            'text-halo-width': 2
+          }
+        }, 'households-chome-names');
+      }
+      if (usePie && otaDisplayPoints.length) {
+        otaDisplayPoints.forEach((d) => { const m = addPieMarker(d); if (m) otaPieMarkers.push(m); });
+      } else if (map.getSource('ota-households')) {
+        map.addLayer({
+          id: 'ota-labels',
+          type: 'symbol',
+          source: 'ota-households',
+          layout: {
+            'text-field': ['get', 'total'],
+            'text-size': 12,
+            'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+            'text-anchor': 'center',
+            'text-offset': [0, 1.2]
+          },
+          paint: {
+            'text-color': '#1a1a1a',
+            'text-halo-color': '#fff',
+            'text-halo-width': 2
+          }
+        }, 'ota-chome-names');
+      }
+    }
+
+    function addPieMarker(d) {
+      const a35 = d.apartments_3_5 || 0;
+      const a610 = d.apartments_6_10 || 0;
+      const total = d.total || 0;
+      const el = document.createElement('div');
+      el.className = 'chart-marker-wrap';
+      el.innerHTML =
+        '<div class="chart-marker" style="position:relative;">' +
+        '<canvas width="48" height="48"></canvas>' +
+        '<span class="total-label">' + total + '</span>' +
+        '</div>';
+      const canvas = el.querySelector('canvas');
+      const sum = a35 + a610;
+      if (sum > 0) {
+        new Chart(canvas, {
+          type: 'doughnut',
+          data: {
+            labels: ['3～5階建', '6～10階建'],
+            datasets: [{ data: [a35, a610], backgroundColor: ['#6b9bd1', '#e8a838'] }]
+          },
+          options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            cutout: '55%',
+            plugins: { legend: { display: false } }
+          }
+        });
+      } else {
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#eee';
+        ctx.beginPath();
+        ctx.arc(24, 24, 22, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#333';
+        ctx.font = '11px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(String(total), 24, 26);
+      }
+      const marker = new mapboxgl.Marker({ element: el })
+        .setLngLat([d.lng, d.lat])
+        .addTo(map);
+      return marker;
+    }
+
+    document.getElementById('usePieChart').addEventListener('change', updateDisplayMode);
+    document.getElementById('showSpeechSpots').addEventListener('change', function () {
+      if (map.getLayer('speech-spots-circle')) {
+        map.setLayoutProperty('speech-spots-circle', 'visibility', this.checked ? 'visible' : 'none');
+      }
+    });
+
+  </script>
+</body>
+</html>

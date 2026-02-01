@@ -1,0 +1,35 @@
+# GitHub Pages へデプロイ（main にプッシュで自動公開）
+# 事前: リポジトリ Settings → Pages → Source を「GitHub Actions」に設定
+# 事前: Settings → Secrets and variables → Actions に MAPBOX_ACCESS_TOKEN を追加
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create config.js
+        run: |
+          echo "var MAPBOX_ACCESS_TOKEN = '${{ secrets.MAPBOX_ACCESS_TOKEN }}';" > config.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
