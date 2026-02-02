@@ -61,6 +61,8 @@
       #legend .legend-item span:not(.legend-swatch) { font-size: 9px; }
       #legend .legend-swatch.fill { width: 12px; height: 8px; }
       #legend .legend-swatch.circle { width: 8px; height: 8px; }
+      #controls label { font-size: 15px; }
+      #controls .controls-sub { display: block; }
     }
     .mapboxgl-popup-content { padding: 10px 14px; min-width: 120px; }
     .mapboxgl-popup-content h3 { margin: 0 0 6px 0; font-size: 14px; }
@@ -96,7 +98,7 @@
   <div id="controls">
     <label>
       <input type="checkbox" id="usePieChart" />
-      円グラフ表示（3～5階建 / 6～10階建）
+      円グラフ表示<span class="controls-sub">（3～5階建 / 6～10階建）</span>
     </label>
     <label>
       <input type="checkbox" id="showSpeechSpots" />
