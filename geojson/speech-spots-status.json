@@ -1,0 +1,2002 @@
+[
+  {
+    "name": "めぐろ区民キャンパス公園",
+    "address": "目黒区八雲1-1-12",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6211893,
+    "lng": 139.6736953
+  },
+  {
+    "name": "衾町公園",
+    "address": "目黒区八雲5-7-2",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6229833,
+    "lng": 139.6681638
+  },
+  {
+    "name": "碑文谷公園",
+    "address": "目黒区碑文谷6-9-11",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.625184,
+    "lng": 139.6827658
+  },
+  {
+    "name": "柿の木坂児童遊園",
+    "address": "目黒区柿の木坂2-29-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6256232,
+    "lng": 139.6732773
+  },
+  {
+    "name": "中根公園付近",
+    "address": "目黒区中根2-10-15",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6144827,
+    "lng": 139.6769405
+  },
+  {
+    "name": "自由が丘公園付近",
+    "address": "目黒区自由が丘2-22-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6105884,
+    "lng": 139.6668931
+  },
+  {
+    "name": "宮前公園付近",
+    "address": "目黒区八雲3-25-15",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6144407,
+    "lng": 139.6638801
+  },
+  {
+    "name": "駒沢陸橋側道",
+    "address": "目黒区八雲5-18-10",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.622858,
+    "lng": 139.6658878
+  },
+  {
+    "name": "自由が丘学園付近",
+    "address": "目黒区自由が丘1-3-27",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6096727,
+    "lng": 139.6706484
+  },
+  {
+    "name": "八雲3丁目交差点脇",
+    "address": "目黒区八雲3-13-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6166442,
+    "lng": 139.6662552
+  },
+  {
+    "name": "八雲小学校角",
+    "address": "目黒区八雲2-14-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6180596,
+    "lng": 139.6712543
+  },
+  {
+    "name": "緑が丘1丁目児童遊園",
+    "address": "目黒区緑が丘1-15-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6097815,
+    "lng": 139.677738
+  },
+  {
+    "name": "十一中北側",
+    "address": "目黒区中根1-22-10",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6138638,
+    "lng": 139.6699451
+  },
+  {
+    "name": "大岡山公園周辺",
+    "address": "目黒区大岡山1-20-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.60988529999999,
+    "lng": 139.683966
+  },
+  {
+    "name": "中根2丁目住宅街十字路",
+    "address": "目黒区中根2-5-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6144951,
+    "lng": 139.6751861
+  },
+  {
+    "name": "自由が丘3丁目エリア",
+    "address": "目黒区自由が丘3-15-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6103931,
+    "lng": 139.6649795
+  },
+  {
+    "name": "緑が丘文化会館横",
+    "address": "目黒区緑が丘2-14-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6093526,
+    "lng": 139.6733044
+  },
+  {
+    "name": "呑川緑道交差点",
+    "address": "目黒区八雲4-5-10",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6223466,
+    "lng": 139.6728137
+  },
+  {
+    "name": "深沢不動付近",
+    "address": "目黒区柿の木坂3-11-10",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6270411,
+    "lng": 139.6743108
+  },
+  {
+    "name": "東が丘公園横",
+    "address": "目黒区東が丘1-15-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6289498,
+    "lng": 139.6668931
+  },
+  {
+    "name": "柿の木坂東児童遊園",
+    "address": "目黒区柿の木坂1-22-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6230032,
+    "lng": 139.6762877
+  },
+  {
+    "name": "平町1丁目住宅街",
+    "address": "目黒区平町1-18-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6183287,
+    "lng": 139.679014
+  },
+  {
+    "name": "柿の木坂3丁目西角",
+    "address": "目黒区柿の木坂3-6-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6277541,
+    "lng": 139.6739102
+  },
+  {
+    "name": "駒沢公園入口",
+    "address": "目黒区東が丘2-16-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6252958,
+    "lng": 139.6654457
+  },
+  {
+    "name": "都立大駅北マンション群",
+    "address": "目黒区中根1-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6150813,
+    "lng": 139.6734317
+  },
+  {
+    "name": "平町児童遊園",
+    "address": "目黒区平町2-15-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6133639,
+    "lng": 139.6821469
+  },
+  {
+    "name": "柿の木坂みどり公園",
+    "address": "目黒区柿の木坂3-3-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6282005,
+    "lng": 139.674887
+  },
+  {
+    "name": "碑文谷2丁目区道交点",
+    "address": "目黒区碑文谷2-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6230651,
+    "lng": 139.6879468
+  },
+  {
+    "name": "サレジオ教会裏手",
+    "address": "目黒区碑文谷1-26-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6197793,
+    "lng": 139.6869417
+  },
+  {
+    "name": "桜修館中等教育学校横",
+    "address": "目黒区八雲1-1-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.621198,
+    "lng": 139.670994
+  },
+  {
+    "name": "国立病院機構付近",
+    "address": "目黒区東が丘2-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6270575,
+    "lng": 139.6652187
+  },
+  {
+    "name": "柿の木坂1丁目交差点裏",
+    "address": "目黒区柿の木坂1-30-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6215766,
+    "lng": 139.6771
+  },
+  {
+    "name": "公園西側坂道",
+    "address": "目黒区中根2-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6162585,
+    "lng": 139.67712
+  },
+  {
+    "name": "八雲体育館周辺",
+    "address": "目黒区八雲1-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6214552,
+    "lng": 139.6727443
+  },
+  {
+    "name": "清水池公園周辺",
+    "address": "目黒区目黒本町2-12-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6242643,
+    "lng": 139.6923554
+  },
+  {
+    "name": "本町5丁目エリア",
+    "address": "目黒区目黒本町5-30-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6210122,
+    "lng": 139.6990723
+  },
+  {
+    "name": "洗足公園周辺",
+    "address": "目黒区洗足2-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6123771,
+    "lng": 139.6954768
+  },
+  {
+    "name": "厳島神社付近三差路",
+    "address": "目黒区碑文谷3-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6196872,
+    "lng": 139.6866165
+  },
+  {
+    "name": "原町1丁目マンション街",
+    "address": "目黒区原町1-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6166665,
+    "lng": 139.6967545
+  },
+  {
+    "name": "目黒星美学園周辺",
+    "address": "目黒区碑文谷1-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.620378,
+    "lng": 139.691616
+  },
+  {
+    "name": "南1丁目区境",
+    "address": "目黒区南1-15-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.614395,
+    "lng": 139.689223
+  },
+  {
+    "name": "洗足駅北マンション街",
+    "address": "目黒区洗足2-20-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6104872,
+    "lng": 139.6931657
+  },
+  {
+    "name": "円融寺裏手",
+    "address": "目黒区碑文谷1-20-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6194484,
+    "lng": 139.6900239
+  },
+  {
+    "name": "4丁目マンションエリア",
+    "address": "目黒区碑文谷4-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6221415,
+    "lng": 139.6834603
+  },
+  {
+    "name": "南2丁目児童遊園",
+    "address": "目黒区南2-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6156656,
+    "lng": 139.6866706
+  },
+  {
+    "name": "西小山駅付近（区境）",
+    "address": "目黒区目黒本町5-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.620416,
+    "lng": 139.701917
+  },
+  {
+    "name": "碑文谷並木道",
+    "address": "目黒区碑文谷6-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6259595,
+    "lng": 139.6814469
+  },
+  {
+    "name": "小山台1丁目公園角",
+    "address": "目黒区小山台1-5-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": false,
+    "remark": "丁目が一致しません（区内で表示）",
+    "lat": 35.6239948,
+    "lng": 139.7047506
+  },
+  {
+    "name": "すずめのお宿公園周辺",
+    "address": "目黒区碑文谷3-11-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6181667,
+    "lng": 139.68458
+  },
+  {
+    "name": "宝来公園",
+    "address": "大田区田園調布3-31-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5945717,
+    "lng": 139.6641788
+  },
+  {
+    "name": "田園調布せせらぎ公園",
+    "address": "大田区田園調布1-53-10",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5899838,
+    "lng": 139.6698136
+  },
+  {
+    "name": "雪ヶ谷児童遊園",
+    "address": "大田区東雪谷2-20-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5960548,
+    "lng": 139.6863271
+  },
+  {
+    "name": "東雪谷二丁目公園",
+    "address": "大田区東雪谷2-3-26",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5981013,
+    "lng": 139.6856165
+  },
+  {
+    "name": "久が原公園",
+    "address": "大田区久が原3-27-18",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5818216,
+    "lng": 139.6909074
+  },
+  {
+    "name": "南久が原児童公園",
+    "address": "大田区南久が原1-17-6",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.575196,
+    "lng": 139.6886584
+  },
+  {
+    "name": "田園調布小学校周辺",
+    "address": "大田区田園調布2-40-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5954749,
+    "lng": 139.6683472
+  },
+  {
+    "name": "多摩川台公園入口",
+    "address": "大田区田園調布4-2-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5917357,
+    "lng": 139.6652785
+  },
+  {
+    "name": "本町児童公園付近",
+    "address": "大田区田園調布本町15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5844577,
+    "lng": 139.6771897
+  },
+  {
+    "name": "嶺町小学校周辺",
+    "address": "大田区田園調布本町7-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5879021,
+    "lng": 139.6773814
+  },
+  {
+    "name": "坂上見通し地点",
+    "address": "大田区東雪谷3-20-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.593578,
+    "lng": 139.6886647
+  },
+  {
+    "name": "住宅街中央",
+    "address": "大田区雪谷大塚町10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5907686,
+    "lng": 139.6795238
+  },
+  {
+    "name": "2丁目低層エリア",
+    "address": "大田区南雪谷2-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5913972,
+    "lng": 139.6808422
+  },
+  {
+    "name": "1丁目住宅街",
+    "address": "大田区石川町1-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6014772,
+    "lng": 139.6820694
+  },
+  {
+    "name": "多摩川沿い高台",
+    "address": "大田区田園調布5-50-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5946149,
+    "lng": 139.657515
+  },
+  {
+    "name": "雪谷中学校周辺",
+    "address": "大田区南雪谷5-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5907469,
+    "lng": 139.6887826
+  },
+  {
+    "name": "東雪谷4丁目マンション群",
+    "address": "大田区東雪谷4-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5925122,
+    "lng": 139.6951259
+  },
+  {
+    "name": "扇状道路合流点",
+    "address": "大田区田園調布2-20-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5944632,
+    "lng": 139.6714965
+  },
+  {
+    "name": "笹丸東公園付近",
+    "address": "大田区田園調布本町25-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.583662,
+    "lng": 139.6737476
+  },
+  {
+    "name": "諏訪分公園周辺",
+    "address": "大田区田園調布4-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5951096,
+    "lng": 139.6620725
+  },
+  {
+    "name": "石川台駅北高台",
+    "address": "大田区石川町2-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5991686,
+    "lng": 139.6855559
+  },
+  {
+    "name": "久が原4丁目広道",
+    "address": "大田区久が原4-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5795096,
+    "lng": 139.6924137
+  },
+  {
+    "name": "千鳥1丁目マンション街",
+    "address": "大田区千鳥1-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5728307,
+    "lng": 139.6944736
+  },
+  {
+    "name": "鵜の木1丁目公園角",
+    "address": "大田区鵜の木1-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.576241,
+    "lng": 139.6828422
+  },
+  {
+    "name": "久が原特別出張所付近",
+    "address": "大田区久が原2-12-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5841181,
+    "lng": 139.6972436
+  },
+  {
+    "name": "児童公園周辺",
+    "address": "大田区東嶺町10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.58449969999999,
+    "lng": 139.6843077
+  },
+  {
+    "name": "南久が原2丁目交差点",
+    "address": "大田区南久が原2-10-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5772658,
+    "lng": 139.6853944
+  },
+  {
+    "name": "千鳥町駅西住宅街",
+    "address": "大田区千鳥1-5-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5729995,
+    "lng": 139.6914155
+  },
+  {
+    "name": "5丁目静かな区道",
+    "address": "大田区久が原5-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5779049,
+    "lng": 139.6972898
+  },
+  {
+    "name": "3丁目マンション密集地",
+    "address": "大田区鵜の木3-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5771107,
+    "lng": 139.6782165
+  },
+  {
+    "name": "松山公園周辺",
+    "address": "大田区久が原4-25-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5791121,
+    "lng": 139.6932114
+  },
+  {
+    "name": "久が原出世観音付近",
+    "address": "大田区久が原2-5-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5836365,
+    "lng": 139.6940101
+  },
+  {
+    "name": "千鳥3丁目マンション街",
+    "address": "大田区千鳥3-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5725088,
+    "lng": 139.6880266
+  },
+  {
+    "name": "2丁目見通し区道",
+    "address": "大田区鵜の木2-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.575508,
+    "lng": 139.6801732
+  },
+  {
+    "name": "久が原杜の公園周辺",
+    "address": "大田区久が原4-30-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5811703,
+    "lng": 139.69369
+  },
+  {
+    "name": "西嶺町高台",
+    "address": "大田区西嶺町15-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5812755,
+    "lng": 139.679652
+  },
+  {
+    "name": "3丁目マンション密集",
+    "address": "大田区上池台3-20-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.594624,
+    "lng": 139.697104
+  },
+  {
+    "name": "長池公園周辺",
+    "address": "大田区上池台1-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.60246,
+    "lng": 139.6958877
+  },
+  {
+    "name": "1丁目住宅街",
+    "address": "大田区仲池上1-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5872256,
+    "lng": 139.7005507
+  },
+  {
+    "name": "北嶺町児童公園前",
+    "address": "大田区北嶺町15-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5888222,
+    "lng": 139.6809563
+  },
+  {
+    "name": "洗足池公園南入口",
+    "address": "大田区南雪谷1-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5962023,
+    "lng": 139.6830715
+  },
+  {
+    "name": "5丁目坂頂上",
+    "address": "大田区上池台5-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5967669,
+    "lng": 139.7025267
+  },
+  {
+    "name": "2丁目静かな区道",
+    "address": "大田区仲池上2-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5830434,
+    "lng": 139.7009893
+  },
+  {
+    "name": "北嶺町交差点裏",
+    "address": "大田区北嶺町20-1",
+    "targetLayer": "",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5865754,
+    "lng": 139.6828422
+  },
+  {
+    "name": "商店街外れ",
+    "address": "大田区上池台2-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.59937770000001,
+    "lng": 139.6949756
+  },
+  {
+    "name": "小池公園周辺",
+    "address": "大田区上池台3-35-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.59598769999999,
+    "lng": 139.6944878
+  },
+  {
+    "name": "夫婦坂付近",
+    "address": "大田区上池台4-10-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5992452,
+    "lng": 139.7007701
+  },
+  {
+    "name": "雪谷中学校東側",
+    "address": "大田区東雪谷5-15-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5905098,
+    "lng": 139.6935152
+  },
+  {
+    "name": "桜並木通り沿い",
+    "address": "大田区仲池上1-25-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5866273,
+    "lng": 139.6968886
+  },
+  {
+    "name": "4丁目マンション群",
+    "address": "大田区上池台4-25-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5980373,
+    "lng": 139.6995934
+  },
+  {
+    "name": "洗足池図書館周辺",
+    "address": "大田区南雪谷2-1-1",
+    "targetLayer": "",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.5916933,
+    "lng": 139.6807284
+  },
+  {
+    "name": "西郷山公園入口",
+    "address": "青葉台1-1-1",
+    "targetLayer": "高所得層・経営者",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "青葉台タワー前",
+    "address": "青葉台3-1",
+    "targetLayer": "ビジネス層",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "住友不動産タワー横",
+    "address": "青葉台3-6",
+    "targetLayer": "IT・若手社会人",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "クロスエアタワー車寄せ",
+    "address": "大橋1-5-1",
+    "targetLayer": "マンション子育て世代",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "プリズムタワー周辺",
+    "address": "大橋1-6-1",
+    "targetLayer": "高層マンション住民",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "氷川神社下交差点",
+    "address": "大橋2-24-1",
+    "targetLayer": "通行人・住民",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "駒場東大前駅住宅側",
+    "address": "駒場1-28-1",
+    "targetLayer": "学生・教職員・住民",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "駒場エデン付近",
+    "address": "駒場2-1-1",
+    "targetLayer": "住宅街住民",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "駒場4丁目マンション群",
+    "address": "駒場4-5-1",
+    "targetLayer": "静かな住宅層",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "国道246号側道合流部",
+    "address": "大橋1-1-1",
+    "targetLayer": "幹線道路付近住民",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "パークハウス目黒東山前",
+    "address": "東山1-10-5",
+    "targetLayer": "分譲マンション層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6475423,
+    "lng": 139.6932551
+  },
+  {
+    "name": "東山公園北側",
+    "address": "東山2-6-1",
+    "targetLayer": "ファミリー層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.649344,
+    "lng": 139.6896219
+  },
+  {
+    "name": "池尻大橋駅住宅側",
+    "address": "東山3-1-1",
+    "targetLayer": "駅利用者・単身者",
+    "method": "位置が特定できなかった",
+    "accurate": false,
+    "remark": "住所・スポット名のいずれでも位置を特定できませんでした",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "中目黒アトラスタワー周辺",
+    "address": "上目黒1-1-1",
+    "targetLayer": "都市型居住者",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6436661,
+    "lng": 139.7003935
+  },
+  {
+    "name": "中目黒GTタワー前",
+    "address": "上目黒2-1-1",
+    "targetLayer": "オフィス・居住混合層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6434431,
+    "lng": 139.6989701
+  },
+  {
+    "name": "目黒区役所裏マンション群",
+    "address": "上目黒3-10-1",
+    "targetLayer": "公務員・一般世帯",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.643814,
+    "lng": 139.6972798
+  },
+  {
+    "name": "烏森小学校付近",
+    "address": "上目黒5-26-1",
+    "targetLayer": "教育関心層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6421118,
+    "lng": 139.6872523
+  },
+  {
+    "name": "野沢通りマンション角",
+    "address": "東山1-21-1",
+    "targetLayer": "通り沿い居住者",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6450765,
+    "lng": 139.6905362
+  },
+  {
+    "name": "国家公務員宿舎前",
+    "address": "東山2-1-1",
+    "targetLayer": "宿舎入居世帯",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6497995,
+    "lng": 139.6893138
+  },
+  {
+    "name": "祐天寺駅南側住宅街",
+    "address": "上目黒4-1-1",
+    "targetLayer": "定住ファミリー層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6418952,
+    "lng": 139.6928824
+  },
+  {
+    "name": "恵比寿ビュータワー前",
+    "address": "三田1-4-4",
+    "targetLayer": "高層・富裕層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6408645,
+    "lng": 139.7140967
+  },
+  {
+    "name": "三田共用会議所周辺",
+    "address": "三田2-10-1",
+    "targetLayer": "知的・シニア層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6400861,
+    "lng": 139.7093871
+  },
+  {
+    "name": "目黒セントラルスクエア裏",
+    "address": "目黒1-1-1",
+    "targetLayer": "ターミナル居住者",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6383085,
+    "lng": 139.712955
+  },
+  {
+    "name": "権之助坂上マンション群",
+    "address": "目黒2-10-1",
+    "targetLayer": "商店街・中層住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6333315,
+    "lng": 139.7093151
+  },
+  {
+    "name": "目黒通り元競馬場付近",
+    "address": "目黒3-1-1",
+    "targetLayer": "通り沿い世帯",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6358589,
+    "lng": 139.7060541
+  },
+  {
+    "name": "アルコタワー周辺",
+    "address": "下目黒1-8-1",
+    "targetLayer": "IT・ビジネス層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6315463,
+    "lng": 139.7132968
+  },
+  {
+    "name": "パークキューブ目黒タワー前",
+    "address": "下目黒2-2-1",
+    "targetLayer": "賃貸マンション層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6321997,
+    "lng": 139.7115483
+  },
+  {
+    "name": "大鳥神社山手通り側道",
+    "address": "下目黒3-1-1",
+    "targetLayer": "地元定住者",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6321524,
+    "lng": 139.7081078
+  },
+  {
+    "name": "目黒不動尊参道住宅側",
+    "address": "下目黒4-10-1",
+    "targetLayer": "伝統的コミュニティ",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6311524,
+    "lng": 139.7060758
+  },
+  {
+    "name": "茶屋坂付近マンション前",
+    "address": "三田1-13-1",
+    "targetLayer": "山手線内側居住者",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6419011,
+    "lng": 139.7145339
+  },
+  {
+    "name": "目黒消防署裏",
+    "address": "下目黒5-1-1",
+    "targetLayer": "ファミリー層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6308982,
+    "lng": 139.7033431
+  },
+  {
+    "name": "林試の森公園北側門",
+    "address": "下目黒6-1-1",
+    "targetLayer": "公園利用者・近隣住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6297052,
+    "lng": 139.7005507
+  },
+  {
+    "name": "目黒郵便局裏",
+    "address": "中町1-1-1",
+    "targetLayer": "閑静な住宅街",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6335691,
+    "lng": 139.6985976
+  },
+  {
+    "name": "祐天寺中町交差点",
+    "address": "中町2-1-1",
+    "targetLayer": "地域商店・居住者",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6351524,
+    "lng": 139.6971004
+  },
+  {
+    "name": "五本木交差点角",
+    "address": "五本木1-1-1",
+    "targetLayer": "交通量多い住宅地",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6402803,
+    "lng": 139.6867459
+  },
+  {
+    "name": "三宿通りマンション",
+    "address": "五本木2-10-1",
+    "targetLayer": "若手・DINKS層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6344345,
+    "lng": 139.6865739
+  },
+  {
+    "name": "目黒区民センター周辺",
+    "address": "中央町1-1-1",
+    "targetLayer": "地域コミュニティ層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6307498,
+    "lng": 139.6935504
+  },
+  {
+    "name": "目黒区中央体育館前",
+    "address": "中央町2-1-1",
+    "targetLayer": "健康意識・スポーツ層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6335752,
+    "lng": 139.6896019
+  },
+  {
+    "name": "シティテラス下目黒付近",
+    "address": "下目黒4-21-1",
+    "targetLayer": "大規模マンション世帯",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6276167,
+    "lng": 139.7075219
+  },
+  {
+    "name": "大型分譲・都営併設エリア",
+    "address": "中町1-30-1",
+    "targetLayer": "多世代世帯",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6300493,
+    "lng": 139.6955348
+  },
+  {
+    "name": "目黒本町1丁目交差点",
+    "address": "目黒本町1-1-1",
+    "targetLayer": "住宅密集地住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6272886,
+    "lng": 139.6956046
+  },
+  {
+    "name": "目黒本町1丁目住宅地内",
+    "address": "目黒本町1-15-1",
+    "targetLayer": "静かな住宅層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6277162,
+    "lng": 139.6941687
+  },
+  {
+    "name": "学芸大学附属高校付近",
+    "address": "目黒本町2-1-1",
+    "targetLayer": "子育て・アカデミック層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.62574439999999,
+    "lng": 139.6947941
+  },
+  {
+    "name": "目黒本町2丁目マンション",
+    "address": "目黒本町2-10-1",
+    "targetLayer": "分譲マンション層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6249861,
+    "lng": 139.6936003
+  },
+  {
+    "name": "平和通り商店街入口",
+    "address": "目黒本町3-1-1",
+    "targetLayer": "買い物客・店主",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6222108,
+    "lng": 139.7031448
+  },
+  {
+    "name": "目黒本町3丁目密集地",
+    "address": "目黒本町3-15-1",
+    "targetLayer": "密集市街地住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6226105,
+    "lng": 139.7003912
+  },
+  {
+    "name": "目黒本町4丁目通り",
+    "address": "目黒本町4-1-1",
+    "targetLayer": "生活道路利用者",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6226973,
+    "lng": 139.6956046
+  },
+  {
+    "name": "目黒本町4丁目交差点",
+    "address": "目黒本町4-10-1",
+    "targetLayer": "通行人・住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6226973,
+    "lng": 139.6956046
+  },
+  {
+    "name": "武蔵小山駅小山台高校裏",
+    "address": "目黒本町5-1-1",
+    "targetLayer": "駅利用者・学生・住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.620416,
+    "lng": 139.701917
+  },
+  {
+    "name": "パークシティ武蔵小山周辺",
+    "address": "目黒本町5-15-1",
+    "targetLayer": "再開発タワー住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6213366,
+    "lng": 139.7006804
+  },
+  {
+    "name": "目黒本町6丁目交差点",
+    "address": "目黒本町6-1-1",
+    "targetLayer": "西小山駅利用世帯",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6204015,
+    "lng": 139.6956046
+  },
+  {
+    "name": "目黒本町6丁目住宅",
+    "address": "目黒本町6-12-1",
+    "targetLayer": "落ち着いたシニア層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6204015,
+    "lng": 139.6956046
+  },
+  {
+    "name": "洗足駅前",
+    "address": "洗足2-19-5",
+    "targetLayer": "駅前利用者",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6106274,
+    "lng": 139.6942571
+  },
+  {
+    "name": "原町1丁目住宅街",
+    "address": "原町1-20-1",
+    "targetLayer": "戸建・低層住宅層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6167989,
+    "lng": 139.6959237
+  },
+  {
+    "name": "原町2丁目交差点",
+    "address": "原町2-1-1",
+    "targetLayer": "住宅地中心部",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6154201,
+    "lng": 139.6917756
+  },
+  {
+    "name": "原町2丁目分譲マンション",
+    "address": "原町2-15-1",
+    "targetLayer": "分譲マンション層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6154201,
+    "lng": 139.6917756
+  },
+  {
+    "name": "洗足1丁目周辺",
+    "address": "洗足1-1-1",
+    "targetLayer": "落ち着いた住宅層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6141494,
+    "lng": 139.6943282
+  },
+  {
+    "name": "洗足2丁目住宅街",
+    "address": "洗足2-1-1",
+    "targetLayer": "閑静な住宅街",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6113409,
+    "lng": 139.6930519
+  },
+  {
+    "name": "環七通り住宅側道",
+    "address": "南1-1-1",
+    "targetLayer": "騒音対策済み住宅層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6142001,
+    "lng": 139.6873087
+  },
+  {
+    "name": "南2丁目交差点",
+    "address": "南2-1-1",
+    "targetLayer": "地域住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6156656,
+    "lng": 139.6866706
+  },
+  {
+    "name": "1丁目中央十字路",
+    "address": "目黒本町1-5-1",
+    "targetLayer": "住宅地深部",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6259977,
+    "lng": 139.6973754
+  },
+  {
+    "name": "2丁目東側",
+    "address": "目黒本町2-5-1",
+    "targetLayer": "生活道路",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6264006,
+    "lng": 139.6939294
+  },
+  {
+    "name": "3丁目南側",
+    "address": "目黒本町3-8-1",
+    "targetLayer": "中層住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.62192640000001,
+    "lng": 139.7006542
+  },
+  {
+    "name": "4丁目公園付近",
+    "address": "目黒本町4-5-1",
+    "targetLayer": "親子連れ",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6234638,
+    "lng": 139.6973796
+  },
+  {
+    "name": "5丁目住宅地",
+    "address": "目黒本町5-5-1",
+    "targetLayer": "密度高い世帯層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6179479,
+    "lng": 139.6998128
+  },
+  {
+    "name": "1丁目中側",
+    "address": "原町1-10-1",
+    "targetLayer": "静かな通り",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6156099,
+    "lng": 139.6979879
+  },
+  {
+    "name": "洗足駅北側住宅",
+    "address": "洗足1-10-1",
+    "targetLayer": "通勤路住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6152909,
+    "lng": 139.6952057
+  },
+  {
+    "name": "南1丁目分譲マンション",
+    "address": "南1-15-1",
+    "targetLayer": "近代マンション層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.614395,
+    "lng": 139.689223
+  },
+  {
+    "name": "南3丁目住宅街",
+    "address": "南3-1-1",
+    "targetLayer": "地域コミュニティ",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6132724,
+    "lng": 139.6857135
+  },
+  {
+    "name": "6丁目西側",
+    "address": "目黒本町6-5-1",
+    "targetLayer": "西小山方面住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6193973,
+    "lng": 139.6973748
+  },
+  {
+    "name": "目黒星美学園付近",
+    "address": "碑文谷2-17-6",
+    "targetLayer": "教育・文教世帯",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6203054,
+    "lng": 139.6868611
+  },
+  {
+    "name": "イオンスタイル碑文谷裏",
+    "address": "碑文谷2-1-1",
+    "targetLayer": "主婦・買い物層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6248843,
+    "lng": 139.688904
+  },
+  {
+    "name": "碑文谷公園横",
+    "address": "碑文谷4-1-1",
+    "targetLayer": "子育て世代・余暇層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6227188,
+    "lng": 139.6846175
+  },
+  {
+    "name": "サレジオ教会前",
+    "address": "碑文谷5-1-1",
+    "targetLayer": "歴史的・高所得層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6241637,
+    "lng": 139.6862853
+  },
+  {
+    "name": "環七住宅街境界",
+    "address": "碑文谷6-1-1",
+    "targetLayer": "通り沿いマンション",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6264438,
+    "lng": 139.6846168
+  },
+  {
+    "name": "学芸大学駅東口住宅",
+    "address": "鷹番1-1-1",
+    "targetLayer": "若手・DINKS層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6272148,
+    "lng": 139.6920049
+  },
+  {
+    "name": "鷹番小学校付近",
+    "address": "鷹番2-1-1",
+    "targetLayer": "教育熱心層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6301375,
+    "lng": 139.6893028
+  },
+  {
+    "name": "学芸大学駅西口商店街端",
+    "address": "鷹番3-1-1",
+    "targetLayer": "高感度・トレンド層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6288624,
+    "lng": 139.6853301
+  },
+  {
+    "name": "中央町1丁目交差点周辺",
+    "address": "中央町1-10-1",
+    "targetLayer": "住宅密集住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.629194,
+    "lng": 139.6917756
+  },
+  {
+    "name": "五本木3丁目付近",
+    "address": "五本木3-1-1",
+    "targetLayer": "落ち着いた家族層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6318563,
+    "lng": 139.6841183
+  },
+  {
+    "name": "めぐろ区民キャンパス前",
+    "address": "八雲1-1-1",
+    "targetLayer": "知的・文化層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6210474,
+    "lng": 139.6735799
+  },
+  {
+    "name": "駒沢通り住宅側",
+    "address": "八雲2-1-1",
+    "targetLayer": "高級マンション層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6214164,
+    "lng": 139.6701424
+  },
+  {
+    "name": "八雲3丁目住宅街",
+    "address": "八雲3-1-1",
+    "targetLayer": "閑静な富裕層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6166442,
+    "lng": 139.6662552
+  },
+  {
+    "name": "八雲4丁目分譲マンション",
+    "address": "八雲4-1-1",
+    "targetLayer": "静かな定住者",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6244334,
+    "lng": 139.6713584
+  },
+  {
+    "name": "自由が丘駒沢通り接点",
+    "address": "八雲5-1-1",
+    "targetLayer": "周辺住民・通行人",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6253164,
+    "lng": 139.6686999
+  },
+  {
+    "name": "柿の木坂1丁目マンション",
+    "address": "柿の木坂1-1-1",
+    "targetLayer": "上質な住宅層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6235677,
+    "lng": 139.6789681
+  },
+  {
+    "name": "柿の木坂2丁目付近",
+    "address": "柿の木坂2-1-1",
+    "targetLayer": "閑静な通り",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6251416,
+    "lng": 139.6745481
+  },
+  {
+    "name": "柿の木坂3丁目交差点",
+    "address": "柿の木坂3-1-1",
+    "targetLayer": "通行人・近隣住民",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6277541,
+    "lng": 139.6739102
+  },
+  {
+    "name": "都立大学駅周辺マンション",
+    "address": "平町1-1-1",
+    "targetLayer": "利便性重視層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6200631,
+    "lng": 139.6804296
+  },
+  {
+    "name": "平町2丁目住宅街",
+    "address": "平町2-1-1",
+    "targetLayer": "定住ファミリー層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6147629,
+    "lng": 139.6815661
+  },
+  {
+    "name": "自由が丘駅前住宅側入口",
+    "address": "自由が丘1-1-1",
+    "targetLayer": "商店街・住民混合",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6109575,
+    "lng": 139.6709796
+  },
+  {
+    "name": "カトレア通りマンション群",
+    "address": "自由が丘2-1-1",
+    "targetLayer": "洗練された住民層",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6088884,
+    "lng": 139.668292
+  },
+  {
+    "name": "奥沢境界線付近",
+    "address": "自由が丘3-1-1",
+    "targetLayer": "落ち着いた富裕層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6134698,
+    "lng": 139.6651389
+  },
+  {
+    "name": "緑が丘1丁目周辺",
+    "address": "緑が丘1-1-1",
+    "targetLayer": "学生・多世代",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6097815,
+    "lng": 139.677738
+  },
+  {
+    "name": "緑が丘駅周辺",
+    "address": "緑が丘2-1-1",
+    "targetLayer": "駅利用者・商店主",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6120774,
+    "lng": 139.6756769
+  },
+  {
+    "name": "緑が丘3丁目住宅",
+    "address": "緑が丘3-1-1",
+    "targetLayer": "静かな居住地",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6046522,
+    "lng": 139.679971
+  },
+  {
+    "name": "九品仏川緑道沿い",
+    "address": "自由が丘1-25-1",
+    "targetLayer": "散策客・周辺住民",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6097407,
+    "lng": 139.669767
+  },
+  {
+    "name": "ピーコック裏住宅街",
+    "address": "自由が丘2-10-1",
+    "targetLayer": "地元定住富裕層",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6086491,
+    "lng": 139.6681689
+  },
+  {
+    "name": "等々力通り沿い",
+    "address": "八雲3-20-1",
+    "targetLayer": "通り沿いマンション",
+    "method": "住所で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6166442,
+    "lng": 139.6662552
+  },
+  {
+    "name": "駅南口マンション前（締め）",
+    "address": "自由が丘1-31-1",
+    "targetLayer": "帰宅客・広域アピール",
+    "method": "スポット名で検索",
+    "accurate": true,
+    "remark": "",
+    "lat": 35.6072744,
+    "lng": 139.6689575
+  }
+]

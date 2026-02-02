@@ -63,11 +63,83 @@
       #legend .legend-swatch.circle { width: 8px; height: 8px; }
       #controls label { font-size: 15px; }
       #controls .controls-sub { display: block; }
+      /* スマホ: スポット一覧は右から引き出し */
+      #spot-status-panel {
+        width: 90%;
+        max-width: 340px;
+        transform: translateX(100%);
+        transition: transform 0.25s ease-out;
+        box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+      }
+      #spot-status-panel.spot-status-panel-open { transform: translateX(0); }
+      #spot-status-toggle { right: 10px; top: 10px; z-index: 4; }
+      .spot-status-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s, visibility 0.2s;
+      }
+      .spot-status-overlay.is-open { opacity: 1; visibility: visible; }
+      #spot-status-panel .spot-status-panel-close { display: block; }
     }
+    /* PCでは引き出しの閉じるボタンは非表示 */
+    #spot-status-panel .spot-status-panel-close { display: none; }
     .mapboxgl-popup-content { padding: 10px 14px; min-width: 120px; }
     .mapboxgl-popup-content h3 { margin: 0 0 6px 0; font-size: 14px; }
     .mapboxgl-popup-content p { margin: 0; font-size: 13px; color: #333; }
     .mapboxgl-popup-content p.popup-verify { margin-top: 6px; font-size: 12px; color: #666; }
+    #spot-status-panel {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 380px;
+      max-height: 100vh;
+      overflow: auto;
+      background: #fff;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.15);
+      z-index: 2;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .spot-status-panel-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    #spot-status-panel h4 { margin: 0; font-size: 13px; flex: 1; }
+    #spot-status-panel .spot-status-panel-close {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: #333;
+    }
+    #spot-status-panel .spot-status-panel-close:hover { background: #e0e0e0; }
+    #spot-status-panel table { width: 100%; border-collapse: collapse; }
+    #spot-status-panel th, #spot-status-panel td { border: 1px solid #ddd; padding: 4px 6px; text-align: left; vertical-align: top; }
+    #spot-status-panel th { background: #f5f5f5; font-weight: bold; white-space: nowrap; }
+    #spot-status-panel tr.method-spot { background: #e8f5e9; }
+    #spot-status-panel tr.method-address { background: #e3f2fd; }
+    #spot-status-panel tr.method-centroid { background: #fff3e0; }
+    #spot-status-panel tr.method-skip { background: #ffebee; }
+    #spot-status-panel .accurate-no { color: #c62828; }
+    #spot-status-panel tr.spot-row-clickable { cursor: pointer; }
+    #spot-status-panel tr.spot-row-clickable:hover { outline: 1px solid #1976d2; }
+    #spot-status-toggle { position: fixed; right: 390px; top: 10px; z-index: 3; padding: 6px 10px; font-size: 12px; cursor: pointer; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
+    #spot-status-toggle:hover { background: #f0f0f0; }
+    .spot-drag-hint { font-size: 11px; color: #666; margin: 4px 0 8px 0; }
+    #speech-spots-save-btn { margin-bottom: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer; background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; }
+    #speech-spots-save-btn:hover { background: #eee; }
+    .popup-buttons { margin-top: 10px; }
+    .popup-buttons button { margin-right: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; }
+    .popup-buttons button:hover { background: #eee; }
+    .popup-buttons .btn-move-spot { background: #9c27b0; color: #fff; border-color: #7b1fa2; }
+    .popup-buttons .btn-move-spot:hover { background: #7b1fa2; }
     .chart-marker {
       background: #fff;
       border-radius: 50%;
@@ -148,6 +220,18 @@
     </div>
   </div>
   <div id="map"></div>
+  <div class="spot-status-overlay" id="spot-status-overlay" aria-hidden="true"></div>
+  <button type="button" id="spot-status-toggle" title="スポット一覧の表示/非表示">スポット一覧</button>
+  <div id="spot-status-panel">
+    <div class="spot-status-panel-header">
+      <h4>演説スポット 特定方法・正確性一覧</h4>
+      <button type="button" class="spot-status-panel-close" id="spot-status-panel-close" title="閉じる">×</button>
+    </div>
+    <p id="spot-status-summary"></p>
+    <p class="spot-drag-hint">※スポットをクリックして吹き出しの「場所変更」で位置を移動できます。移動後は吹き出しの「このスポットを保存」または右のボタンでGeoJSONをダウンロードし、geojson/speech-spots.json を置き換えてください。</p>
+    <button type="button" id="speech-spots-save-btn">位置の変更を保存（GeoJSON）</button>
+    <div id="spot-status-table-wrap"></div>
+  </div>
 
   <script>
     // Mapbox アクセストークン（取得済みのトークンに差し替えてください）
@@ -188,15 +272,21 @@
       return str.replace(/^東京都大田区/, '').replace(/\s+/g, '');
     }
 
+    let wasDragging = false;
+    let currentSpotEditIndex = null; // 吹き出しで「場所変更」を押したスポットのインデックス
+    let moveMarker = null; // 場所変更用のドラッグ可能マーカー
     map.on('load', () => {
       Promise.all([
         fetch('./geojson/meguro-shapefile-areas.json').then((r) => r.ok ? r.json() : null),
         fetch('./geojson/ota-shapefile-areas.json').then((r) => r.ok ? r.json() : null),
         fetch('./geojson/chome-households.json').then((r) => r.ok ? r.json() : []),
         fetch('./geojson/chome-households-ota.json').then((r) => r.ok ? r.json() : []),
-        fetch('./geojson/speech-spots.json').then((r) => r.ok ? r.json() : { type: 'FeatureCollection', features: [] })
+        fetch('./geojson/speech-spots.json').then((r) => r.ok ? r.json() : { type: 'FeatureCollection', features: [] }),
+        fetch('./geojson/speech-spots-status.json').then((r) => r.ok ? r.json() : [])
       ])
-        .then(([areasGeoJSON, otaGeoJSON, data, otaData, speechSpots]) => {
+        .then(([areasGeoJSON, otaGeoJSON, data, otaData, speechSpots, spotStatusList]) => {
+          let speechSpotsData = speechSpots;
+          if (speechSpotsData?.features?.length) map._speechSpotsData = speechSpotsData;
           if (!areasGeoJSON?.features?.length) {
             console.error('meguro-shapefile-areas.json を読み込めません。npm run build:shapefile を実行してください。');
             return;
@@ -435,11 +525,11 @@
             });
           }
 
-          // 演説スポット（施設名・住所）をプロット
+          // 演説スポット（施設名・住所）をプロット（クリック→吹き出しの「場所変更」で位置移動）
           if (speechSpots?.features?.length) {
             map.addSource('speech-spots', {
               type: 'geojson',
-              data: speechSpots
+              data: speechSpotsData
             });
             map.addLayer({
               id: 'speech-spots-circle',
@@ -455,16 +545,102 @@
                 'circle-stroke-color': '#fff'
               }
             });
+            function downloadSpeechSpotsGeoJSON() {
+              const d = map._speechSpotsData;
+              if (!d || !d.features?.length) return;
+              const blob = new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' });
+              const a = document.createElement('a');
+              a.href = URL.createObjectURL(blob);
+              a.download = 'speech-spots.json';
+              a.click();
+              URL.revokeObjectURL(a.href);
+            }
+            window._downloadSpeechSpotsGeoJSON = downloadSpeechSpotsGeoJSON;
+            document.getElementById('speech-spots-save-btn').addEventListener('click', downloadSpeechSpotsGeoJSON);
           }
 
           updateDisplayMode();
+
+          // スポット特定方法・正確性一覧を表示（プロット可否・クリックで地図移動）
+          if (Array.isArray(spotStatusList) && spotStatusList.length) {
+            const byMethod = { 'スポット名で検索': 0, '住所で検索': 0, '町丁中心': 0, '位置が特定できなかった': 0, '特定不可': 0 };
+            let plottedCount = 0;
+            spotStatusList.forEach((r) => {
+              if (byMethod[r.method] !== undefined) byMethod[r.method]++;
+              if (r.lat != null && r.lng != null) plottedCount++;
+            });
+            const unlocatedCount = (byMethod['位置が特定できなかった'] || 0) + (byMethod['特定不可'] || 0);
+            const summaryEl = document.getElementById('spot-status-summary');
+            if (summaryEl) {
+              summaryEl.textContent = 'プロット済: ' + plottedCount + '件 / 未プロット: ' + (spotStatusList.length - plottedCount) + '件　｜　スポット名: ' + byMethod['スポット名で検索'] + ' / 住所: ' + byMethod['住所で検索'] + ' / 町丁中心: ' + byMethod['町丁中心'] + ' / 位置が特定できなかった: ' + unlocatedCount;
+            }
+            const wrap = document.getElementById('spot-status-table-wrap');
+            if (wrap) {
+              let html = '<table><thead><tr><th>プロット</th><th>スポット名</th><th>住所</th><th>特定方法</th><th>正確性</th><th>備考</th></tr></thead><tbody>';
+              const rowClass = (m) => m === 'スポット名で検索' ? 'method-spot' : m === '住所で検索' ? 'method-address' : m === '町丁中心' ? 'method-centroid' : (m === '位置が特定できなかった' || m === '特定不可') ? 'method-skip' : 'method-skip';
+              spotStatusList.forEach((r) => {
+                const plotted = r.lat != null && r.lng != null;
+                const plotCell = plotted ? '○' : '×';
+                const acc = r.accurate ? '正確' : (r.method === '位置が特定できなかった' || r.method === '特定不可' ? '-' : '要確認');
+                const accCls = r.accurate ? '' : ' accurate-no';
+                const trClass = rowClass(r.method) + (plotted ? ' spot-row-clickable' : '');
+                const dataAttrs = plotted ? ' data-lat="' + r.lat + '" data-lng="' + r.lng + '"' : '';
+                html += '<tr class="' + trClass + '"' + dataAttrs + '><td>' + plotCell + '</td><td>' + escapeHtml(r.name) + '</td><td>' + escapeHtml(r.address) + '</td><td>' + escapeHtml(r.method) + '</td><td class="' + accCls + '">' + acc + '</td><td>' + escapeHtml(r.remark) + '</td></tr>';
+              });
+              html += '</tbody></table>';
+              wrap.innerHTML = html;
+              wrap.addEventListener('click', (e) => {
+                const tr = e.target.closest('tr');
+                if (tr && tr.dataset.lng != null && tr.dataset.lat != null) {
+                  map.flyTo({ center: [parseFloat(tr.dataset.lng), parseFloat(tr.dataset.lat)], zoom: 17, duration: 1000 });
+                  document.getElementById('showSpeechSpots').checked = true;
+                  if (map.getLayer('speech-spots-circle')) {
+                    map.setLayoutProperty('speech-spots-circle', 'visibility', 'visible');
+                  }
+                }
+              });
+            }
+          }
         })
         .catch((e) => console.error('Failed to load GeoJSON data', e));
 
+    function escapeHtml(s) {
+      if (s == null) return '';
+      const div = document.createElement('div');
+      div.textContent = s;
+      return div.innerHTML;
+    }
+
+      // 場所変更: 吹き出しの「場所変更」押下でドラッグ可能マーカーを表示し、ドラッグ後に確定
+      window.startMoveSpot = function () {
+        const idx = currentSpotEditIndex;
+        if (idx == null) return;
+        const data = map._speechSpotsData;
+        if (!data || !data.features || !data.features[idx]) return;
+        if (moveMarker) { moveMarker.remove(); moveMarker = null; }
+        const coords = data.features[idx].geometry.coordinates;
+        const el = document.createElement('div');
+        el.className = 'move-marker-pin';
+        el.style.cssText = 'width:28px;height:28px;border-radius:50%;background:#9c27b0;border:3px solid #fff;cursor:grab;box-shadow:0 2px 6px rgba(0,0,0,0.3);';
+        moveMarker = new mapboxgl.Marker({ element: el, draggable: true }).setLngLat(coords).addTo(map);
+        moveMarker.on('dragend', function () {
+          const lngLat = moveMarker.getLngLat();
+          data.features[idx].geometry.coordinates = [lngLat.lng, lngLat.lat];
+          map.getSource('speech-spots').setData(data);
+          moveMarker.remove();
+          moveMarker = null;
+          const donePopup = new mapboxgl.Popup({ offset: 15 }).setLngLat(lngLat).setHTML('<p>位置を変更しました</p><button type="button" class="btn-save-spot-popup">このスポットを保存（GeoJSONダウンロード）</button>').addTo(map);
+          donePopup.on('open', function () {
+            const doneEl = donePopup.getElement();
+            if (doneEl) doneEl.querySelector('.btn-save-spot-popup')?.addEventListener('click', function () { if (window._downloadSpeechSpotsGeoJSON) window._downloadSpeechSpotsGeoJSON(); });
+          });
+        });
+      };
+
       // クリック時は演説スポットを優先（ポリゴンと重なっていても施設名を表示）
-      // 少し広い範囲で検索して円が小さい演説スポットも確実に反応するようにする
       const clickRadius = 20;
       map.on('click', (e) => {
+        if (wasDragging) { wasDragging = false; return; }
         const box = [[e.point.x - clickRadius, e.point.y - clickRadius], [e.point.x + clickRadius, e.point.y + clickRadius]];
         const features = map.queryRenderedFeatures(box, {
           layers: ['speech-spots-circle', 'meguro-areas-fill', 'ota-areas-fill']
@@ -474,12 +650,26 @@
         const otaPolygon = features.find((f) => f.layer.id === 'ota-areas-fill');
 
         if (speechSpot) {
+          const data = map._speechSpotsData;
+          const coords = speechSpot.geometry.coordinates;
+          const idx = data && data.features ? data.features.findIndex((fe) => fe.geometry && fe.geometry.coordinates && Math.abs((fe.geometry.coordinates[0] || 0) - coords[0]) < 1e-6 && Math.abs((fe.geometry.coordinates[1] || 0) - coords[1]) < 1e-6) : -1;
+          currentSpotEditIndex = idx >= 0 ? idx : null;
           const p = speechSpot.properties || {};
           const name = p.name || '施設';
           const address = p.address || '';
-          let html = '<h3>' + name + '</h3>';
-          if (address) html += '<p>' + address + '</p>';
-          new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+          const targetLayer = p.targetLayer || '';
+          let html = '<h3>' + escapeHtml(name) + '</h3>';
+          if (address) html += '<p>' + escapeHtml(address) + '</p>';
+          if (targetLayer) html += '<p>ターゲット層: ' + escapeHtml(targetLayer) + '</p>';
+          html += '<p class="popup-buttons"><button type="button" class="btn-move-spot">場所変更</button> <button type="button" class="btn-save-spot">このスポットを保存</button></p>';
+          const popup = new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+          popup.on('open', function () {
+            const popEl = popup.getElement();
+            if (popEl) {
+              popEl.querySelector('.btn-move-spot')?.addEventListener('click', function () { popup.remove(); if (window.startMoveSpot) window.startMoveSpot(); });
+              popEl.querySelector('.btn-save-spot')?.addEventListener('click', function () { if (window._downloadSpeechSpotsGeoJSON) window._downloadSpeechSpotsGeoJSON(); });
+            }
+          });
           return;
         }
         if (otaPolygon) {
@@ -632,6 +822,56 @@
         map.setLayoutProperty('speech-spots-circle', 'visibility', this.checked ? 'visible' : 'none');
       }
     });
+
+    (function () {
+      const panel = document.getElementById('spot-status-panel');
+      const overlay = document.getElementById('spot-status-overlay');
+      const toggle = document.getElementById('spot-status-toggle');
+      const closeBtn = document.getElementById('spot-status-panel-close');
+
+      function isMobile() { return window.innerWidth <= 768; }
+
+      function openPanel() {
+        if (isMobile()) {
+          panel.classList.add('spot-status-panel-open');
+          if (overlay) { overlay.classList.add('is-open'); overlay.setAttribute('aria-hidden', 'false'); }
+        } else {
+          panel.style.display = 'block';
+        }
+      }
+      function closePanel() {
+        if (isMobile()) {
+          panel.classList.remove('spot-status-panel-open');
+          if (overlay) { overlay.classList.remove('is-open'); overlay.setAttribute('aria-hidden', 'true'); }
+        } else {
+          panel.style.display = 'none';
+        }
+      }
+      function togglePanel() {
+        if (isMobile()) {
+          const open = panel.classList.contains('spot-status-panel-open');
+          if (open) closePanel();
+          else openPanel();
+        } else {
+          panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        }
+      }
+
+      toggle.addEventListener('click', togglePanel);
+      closeBtn.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+
+      if (isMobile()) {
+        panel.classList.remove('spot-status-panel-open');
+      }
+      panel.style.display = 'block';
+      window.addEventListener('resize', function () {
+        if (!isMobile()) {
+          panel.classList.remove('spot-status-panel-open');
+          if (overlay) overlay.classList.remove('is-open');
+        }
+      });
+    })();
 
   </script>
 </body>

@@ -25,14 +25,15 @@ npm run build
 - `geojson/chome-households.json` … 町丁ごとの座標・合計世帯数・共同住宅世帯数（Excel と CommPt をマージ）
 - `geojson/meguro-shapefile-areas.json` … 境界データ（Shapefile）から変換した町丁ポリゴン（`npm run build:shapefile` で生成。`A002005212020DDSWC13110-JGD2011/` に r2ka13110.\* が必要）
 
-### 3. Mapbox トークンの設定
+### 3. トークン・API キーの設定
 
 1. `config.js.example` を `config.js` にコピー
-2. `config.js` の `MAPBOX_ACCESS_TOKEN` に取得したトークンを記入
+2. **MAPBOX_ACCESS_TOKEN** … 地図表示用。[Mapbox](https://www.mapbox.com/) で取得
+3. **GOOGLE_MAPS_API_KEY** … 演説スポットのジオコーディング用。[Google Cloud](https://console.cloud.google.com/) で Geocoding API を有効にし、API キーを発行
 
 ```bash
 cp config.js.example config.js
-# config.js を編集してトークンを設定
+# config.js を編集して MAPBOX_ACCESS_TOKEN と GOOGLE_MAPS_API_KEY を設定
 ```
 
 ### 4. 地図の表示
@@ -70,7 +71,7 @@ npx serve .
 - `npm run build:excel:ota` … 大田区 Excel から chome-households-ota.json を生成
 - `npm run build:shapefile` … 目黒区 Shapefile から meguro-shapefile-areas.json を生成
 - `npm run build:shapefile:ota` … 大田区 Shapefile から ota-shapefile-areas.json を生成
-- `npm run build:speech-spots` … 演説スポット CSV をジオコーディングして speech-spots.json を生成（住所で検索→ポリゴン外なら場所名で再検索・「付近」は除く→それでもポリゴン外ならプロットしない。**先に build:shapefile / build:shapefile:ota を実行すること**）
+- `npm run build:speech-spots` … 演説スポット CSV を **Google Geocoding API** でジオコーディングして speech-spots.json を生成（config.js に GOOGLE_MAPS_API_KEY が必要。**先に build:shapefile / build:shapefile:ota を実行すること**）
 - `npm run build` … build:gml と build:excel を実行
 
 ---

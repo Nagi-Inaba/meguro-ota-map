@@ -1,6 +1,10 @@
-// このファイルを config.js にコピーし、Mapbox のアクセストークンを設定してください。
+// このファイルを config.js にコピーし、各キーを設定してください。
 // config.js は .gitignore に含まれており、リポジトリにコミットされません。
-// 公開時: Mapbox ダッシュボードでトークンの URL 制限（公開サイトのドメイン）を設定することを推奨します。
+
+// 地図表示用（index.html）。Mapbox ダッシュボードでトークンの URL 制限を推奨。
 var MAPBOX_ACCESS_TOKEN = 'YOUR_MAPBOX_ACCESS_TOKEN';
+
+// 演説スポットのジオコーディング用（npm run build:speech-spots）。Google Cloud で Geocoding API を有効にし、API キーを発行してください。
+var GOOGLE_MAPS_API_KEY = 'YOUR_GOOGLE_MAPS_API_KEY';
 
 
