@@ -808,8 +808,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6771897,
-          35.5844577
+          139.6772595,
+          35.5839027
         ]
       }
     },
@@ -822,8 +822,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6773814,
-          35.5879021
+          139.677419,
+          35.5875547
         ]
       }
     },
@@ -850,8 +850,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6795238,
-          35.5907686
+          139.6793131,
+          35.5905938
         ]
       }
     },
@@ -948,8 +948,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6737476,
-          35.583662
+          139.6736909,
+          35.5833842
         ]
       }
     },
@@ -1046,8 +1046,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6843077,
-          35.58449969999999
+          139.6844174,
+          35.5843553
         ]
       }
     },
@@ -1404,6 +1404,21 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "西郷山公園入口",
+        "address": "青葉台1-1-1",
+        "targetLayer": "高所得層・経営者"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.696881,
+          35.6484592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "パークハウス目黒東山前",
         "address": "東山1-10-5",
         "targetLayer": "分譲マンション層"
@@ -1428,6 +1443,21 @@
         "coordinates": [
           139.6896219,
           35.649344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "池尻大橋駅住宅側",
+        "address": "東山3-1-1",
+        "targetLayer": "駅利用者・単身者"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6853944,
+          35.6495816
         ]
       }
     },
