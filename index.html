@@ -273,8 +273,9 @@
     }
 
     let wasDragging = false;
-    let currentSpotEditIndex = null; // 吹き出しで「場所変更」を押したスポットのインデックス
-    let moveMarker = null; // 場所変更用のドラッグ可能マーカー
+    let currentSpotEditIndex = null;
+    let moveMarker = null;
+    let currentSpotPopup = null; // 現在表示中の演説スポット吹き出し（閉じる用）
     map.on('load', () => {
       Promise.all([
         fetch('./geojson/meguro-shapefile-areas.json').then((r) => r.ok ? r.json() : null),
@@ -662,14 +663,8 @@
           if (address) html += '<p>' + escapeHtml(address) + '</p>';
           if (targetLayer) html += '<p>ターゲット層: ' + escapeHtml(targetLayer) + '</p>';
           html += '<p class="popup-buttons"><button type="button" class="btn-move-spot">場所変更</button> <button type="button" class="btn-save-spot">このスポットを保存</button></p>';
-          const popup = new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
-          popup.on('open', function () {
-            const popEl = popup.getElement();
-            if (popEl) {
-              popEl.querySelector('.btn-move-spot')?.addEventListener('click', function () { popup.remove(); if (window.startMoveSpot) window.startMoveSpot(); });
-              popEl.querySelector('.btn-save-spot')?.addEventListener('click', function () { if (window._downloadSpeechSpotsGeoJSON) window._downloadSpeechSpotsGeoJSON(); });
-            }
-          });
+          currentSpotPopup = new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
+          currentSpotPopup.on('close', function () { currentSpotPopup = null; });
           return;
         }
         if (otaPolygon) {
@@ -820,6 +815,22 @@
     document.getElementById('showSpeechSpots').addEventListener('change', function () {
       if (map.getLayer('speech-spots-circle')) {
         map.setLayoutProperty('speech-spots-circle', 'visibility', this.checked ? 'visible' : 'none');
+      }
+    });
+
+    document.body.addEventListener('click', function (e) {
+      var moveBtn = e.target.closest('.btn-move-spot');
+      var saveBtn = e.target.closest('.btn-save-spot');
+      var saveDoneBtn = e.target.closest('.btn-save-spot-popup');
+      if (moveBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (currentSpotPopup) { currentSpotPopup.remove(); currentSpotPopup = null; }
+        if (window.startMoveSpot) window.startMoveSpot();
+      } else if (saveBtn || saveDoneBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (window._downloadSpeechSpotsGeoJSON) window._downloadSpeechSpotsGeoJSON();
       }
     });
 
