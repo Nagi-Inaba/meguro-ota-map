@@ -657,11 +657,9 @@
           currentSpotEditIndex = idx >= 0 ? idx : null;
           const p = speechSpot.properties || {};
           const name = p.name || '施設';
-          const address = p.address || '';
-          const targetLayer = p.targetLayer || '';
+          const description = p.description || p.address || '';
           let html = '<h3>' + escapeHtml(name) + '</h3>';
-          if (address) html += '<p>' + escapeHtml(address) + '</p>';
-          if (targetLayer) html += '<p>ターゲット層: ' + escapeHtml(targetLayer) + '</p>';
+          if (description) html += '<p>' + escapeHtml(description) + '</p>';
           html += '<p class="popup-buttons"><button type="button" class="btn-move-spot">場所変更</button> <button type="button" class="btn-save-spot">このスポットを保存</button></p>';
           currentSpotPopup = new mapboxgl.Popup({ offset: 15 }).setHTML(html).setLngLat(e.lngLat).addTo(map);
           currentSpotPopup.on('close', function () { currentSpotPopup = null; });

@@ -12,6 +12,8 @@ import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
+// 新CSV（緯度経度入り: No,Name,"Latitude, Longitude",Description,Area）
+const CSV_PATH_COORDS = path.join(ROOT, '演説候補地地点', 'Meguro100Spots.csv - meguro_100_spots.csv');
 // 既存スポット（施設名・住所の2列）。こちらを主に使用し、欠損時のみ 演説スポット.csv を使用
 const CSV_PATH_LEGACY = path.join(ROOT, '演説候補地地点', '演説スポット100件 - シート1.csv');
 // 新CSV（場所・住所・ターゲット層の3列）。ターゲット層の補完と新規行の追加に使用
@@ -35,6 +37,32 @@ function getGoogleApiKey() {
   return m[1];
 }
 
+function parseCsvLine(line) {
+  const out = [];
+  let cur = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        cur += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+    if (ch === ',' && !inQuotes) {
+      out.push(cur);
+      cur = '';
+      continue;
+    }
+    cur += ch;
+  }
+  out.push(cur);
+  return out.map((s) => s.trim());
+}
+
 function parseCsv(csvPath) {
   const buf = fs.readFileSync(csvPath);
   let text = buf.toString('utf-8');
@@ -46,13 +74,54 @@ function parseCsv(csvPath) {
   const rows = [];
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    const parts = line.split(',').map((s) => s.trim());
+    const parts = parseCsvLine(line);
     const name = (parts[0] || '').trim();
     const address = (parts[1] || '').trim();
     const targetLayer = (parts[2] || '').trim();
     if (i === 0 && (name === '施設名' || /場所\s*[（(]目印[）)]/.test(name)) && (address === '住所' || /住所\s*[（(]目黒区[）)]/.test(address))) continue;
     if (!address && !name) continue;
     rows.push({ name, address: address || '', targetLayer });
+  }
+  return rows;
+}
+
+function parseCsvWithCoords(csvPath) {
+  const buf = fs.readFileSync(csvPath);
+  let text = buf.toString('utf-8');
+  const firstLine = text.split(/\r?\n/)[0] || '';
+  if (!/Latitude|Longitude/i.test(firstLine)) {
+    text = iconv.decode(buf, 'shiftjis');
+  }
+  const lines = text.split(/\r?\n/).filter((line) => line.trim());
+  if (!lines.length) return [];
+  const header = parseCsvLine(lines[0]).map((h) => h.trim());
+  const idxName = header.findIndex((h) => /^name$/i.test(h));
+  const idxLatLng = header.findIndex((h) => /latitude/i.test(h) && /longitude/i.test(h));
+  const idxLat = header.findIndex((h) => /^latitude$/i.test(h));
+  const idxLng = header.findIndex((h) => /^longitude$/i.test(h));
+  const idxDesc = header.findIndex((h) => /^description$/i.test(h));
+  const idxArea = header.findIndex((h) => /^area$/i.test(h));
+
+  const rows = [];
+  for (let i = 1; i < lines.length; i++) {
+    const parts = parseCsvLine(lines[i]);
+    const name = (parts[idxName] || '').trim();
+    const description = (parts[idxDesc] || '').trim();
+    const area = (parts[idxArea] || '').trim();
+    let lat = null;
+    let lng = null;
+    if (idxLatLng >= 0) {
+      const latlng = (parts[idxLatLng] || '').split(',').map((s) => s.trim());
+      if (latlng.length >= 2) {
+        lat = Number(latlng[0]);
+        lng = Number(latlng[1]);
+      }
+    } else if (idxLat >= 0 && idxLng >= 0) {
+      lat = Number(parts[idxLat]);
+      lng = Number(parts[idxLng]);
+    }
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+    rows.push({ name, description, area, coords: [lng, lat] });
   }
   return rows;
 }
@@ -449,6 +518,40 @@ function normKeyLoose(name, address) {
 }
 
 async function main() {
+  const useCoords = fs.existsSync(CSV_PATH_COORDS);
+  if (useCoords) {
+    const rows = parseCsvWithCoords(CSV_PATH_COORDS);
+    if (!rows.length) {
+      console.error('緯度経度CSVの有効行がありません。', CSV_PATH_COORDS);
+      process.exit(1);
+    }
+    const features = rows.map((r) => ({
+      type: 'Feature',
+      properties: {
+        name: r.name || '',
+        description: r.description || '',
+        area: r.area || ''
+      },
+      geometry: { type: 'Point', coordinates: r.coords }
+    }));
+    const statusList = rows.map((r) => ({
+      name: r.name || '',
+      address: r.description || '',
+      targetLayer: '',
+      method: '緯度経度CSV',
+      accurate: true,
+      remark: '',
+      lat: r.coords[1],
+      lng: r.coords[0]
+    }));
+    if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
+    fs.writeFileSync(OUT_FILE, JSON.stringify({ type: 'FeatureCollection', features }, null, 2), 'utf-8');
+    console.log('Wrote', OUT_FILE, '(points:', features.length, ')');
+    fs.writeFileSync(STATUS_FILE, JSON.stringify(statusList, null, 2), 'utf-8');
+    console.log('Wrote', STATUS_FILE, '(list:', statusList.length, ')');
+    return;
+  }
+
   const useLegacy = fs.existsSync(CSV_PATH_LEGACY);
   const useNew = fs.existsSync(CSV_PATH_NEW);
   if (!useLegacy && !useNew) {
